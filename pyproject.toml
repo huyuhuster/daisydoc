@@ -3,7 +3,7 @@ requires = ["flit_core >=3.5,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "Daisy doc"
+name = "Daisydoc"
 authors = [{name = "Hu Yu", email = "huyu@ihep.ac.cn"}]
 classifiers = [
     "Development Status :: 4 - Beta",
