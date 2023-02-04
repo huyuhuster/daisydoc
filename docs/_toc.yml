@@ -13,8 +13,13 @@ parts:
   - file: basics/organize
     sections:
     - file: structure/toc
+    - file: file-types/index
       sections:
       - file: file-types/markdown
+      - file: file-types/notebooks
+      - file: file-types/myst-notebooks
+      - file: file-types/jupytext
+      - file: file-types/restructuredtext
     - file: basics/create
 
 - caption: Development
