@@ -22,8 +22,8 @@ Data analysis integrated software system.
 
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
-[![](https://img.shields.io/github/stars/huyuhuster/daisydoc?style=social)](https://github.com/huyuhuster/daisydoc)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.1051/epjconf/20212510402)
+[![](https://img.shields.io/github/stars/executablebooks/jupyter-book?style=social)](https://github.com/executablebooks/jupyter-book)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.5281/zenodo.2561065)
 ```
 
 
@@ -72,7 +72,7 @@ You can find a list of the top issues in the Executable Books issue leader board
 :::
 
 :::{grid-item-card}
-:link: contribute/intro.md
+:link: https://github.com/orgs/executablebooks/discussions
 :class-header: bg-light
 
 🙌 Contribute to projects
