@@ -51,7 +51,7 @@ Here are a few ways to connect more with us.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://github.com/orgs/executablebooks/discussions
+:link: https://github.com/huyuhuster/daisydoc/discussions
 :class-header: bg-light
 
 💬 Ask and answer questions
@@ -62,7 +62,7 @@ We have community discussions, talk about ideas, and share general questions and
 :::
 
 :::{grid-item-card}
-:link: https://github.com/orgs/executablebooks/discussions
+:link: https://github.com/huyuhuster/daisydoc/discussions
 :class-header: bg-light
 
 👍 Vote for new features
@@ -73,7 +73,7 @@ You can find a list of the top issues in the Executable Books issue leader board
 :::
 
 :::{grid-item-card}
-:link: https://github.com/orgs/executablebooks/discussions
+:link: https://code.ihep.ac.cn/hepscc/Daisy
 :class-header: bg-light
 
 🙌 Contribute to projects
