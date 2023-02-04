@@ -16,13 +16,7 @@ If you'd like a more in-depth overview and guide to CommonMark Markdown, see
 This page describes some basic features of the Jupyter Notebook Markdown, and how to
 include them with your book.
 
-```{margin}
-Jupyter Book also supports a fancier version of Markdown called **MyST Markdown**. This
-is a slightly extended flavour of Jupyter Notebook Markdown. It
-allows you to include citations and cross-references, and control more complex
-functionality like adding content to the margin. For more
-information, check out {doc}`../content/myst`.
-```
+
 
 ## Embedding media
 
@@ -42,9 +36,7 @@ It was generated with this code:
 ![C-3PO_droid](../images/C-3PO_droid.png)
 ```
 
-:::{seealso}
-[](../content/figures.md) for more information.
-:::
+
 
 ### Adding movies
 
@@ -69,9 +61,7 @@ P(A_1 \cup A_2 \cup A_3)
 &= \sum_{i=1}^3 P(A_i) - \mathop{\sum \sum}_{1 \le i < j \le 3} P(A_iA_j) + P(A_1A_2A_3)
 $$
 
-:::{seealso}
-[](../content/math.md) for more information.
-:::
+
 
 ### Block-level mathematics
 
@@ -105,12 +95,10 @@ Results in:
 yep = its_{more}^{math}
 \end{align*}
 
-:::{important}
-This requires the [`amsmath` MyST extension to be enabled](math:latex).
-:::
+
 
 ## Extended Markdown with MyST Markdown
 
 In addition to CommonMark Markdown, Jupyter Book also supports a more fully-featured version of Markdown called **MyST Markdown**.
 This is a superset of CommonMark that includes syntactic pieces that are useful for publishing computational narratives.
-For more information about MyST Markdown, see [](../content/myst.md).
+For more information about MyST Markdown
