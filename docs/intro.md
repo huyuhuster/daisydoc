@@ -104,6 +104,9 @@ Create interactive and web-native components and services.
 
 ::::
 
+
+DAISY(Data analysis integrated software system)是利用面向对象技术和c++、Python两种语言，最初是为先进光源在线数据处理而设计开发的软件框架。 在设计之初参考了目前世界上先进的数据处理软件项目，如英国钻石光源开发的数据分析软件 DAWN，英国ISIS中子与缪子源开发的数据分析软件Mantid，欧洲同步辐射光源开发的在线数据处理软件框架EDNA，以及高能物理数据处理软件框架Gaudi。 目标设计实现一个通用的、具有良好扩展性的基础软件架构，集成多种方法学算法和工具，屏蔽计算架构的复杂性和计算资源的多样性，为上层应用软件和用户提供统一和简单的调用接口，并在此基础上开发数据可视化和分析桌面等通用组件，以期形成一个丰富和繁荣的软件生态环境。
+
 This documentation is organized into a few major sections.
 
 - **Tutorials** are step-by-step introductory guides to Jupyter Book.
