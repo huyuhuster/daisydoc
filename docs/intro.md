@@ -18,14 +18,7 @@ title: Daisy Documentation
 :class: sd-fs-3
 Build beautiful, publication-quality books and documents from computational content.
 
-```{button-ref} start/your-first-book
-:ref-type: doc
-:color: primary
-:class: sd-rounded-pill float-left
 
-
-Get started
-```
 
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
@@ -117,132 +110,7 @@ This documentation is organized into a few major sections.
 - **Topic Guides** cover specific areas in more depth, and are organized as discrete "how-to" sections.
 - **Reference** sections describe the API/syntax/etc of Jupyter Book in detail.
 
-# Built with Jupyter Book
 
-Below are some books that have been built with Jupyter Book.
-You can find more in [{bdg-primary}`the Jupyter Book Gallery`](https://executablebooks.org/en/latest/gallery.html).
-
-
-::::{card-carousel} 3
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: https://www.inferentialthinking.com/
-**Inferential Thinking**
-^^^
-```{image} https://inferentialthinking.com/_static/favicon.png
-:height: 100
-```
-
-The textbook used by UC Berkeley's popular Data 8 class.
-+++
-Explore this book {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: https://python.quantecon.org/
-
-**QuantEcon**
-^^^
-```{image} https://python.quantecon.org/_static/qe-logo-large.png
-:height: 100
-```
-
-A free online book to teach computational economics with open source tools.
-+++
-Explore this book {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: https://the-turing-way.netlify.app
-
-**The Turing Way**
-^^^
-```{image} https://the-turing-way.netlify.app/_static/logo.jpg
-:height: 100
-```
-
-A guidebook for best-practices in reproducible and community-driven science.
-+++
-Explore this book {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: https://inria.github.io/scikit-learn-mooc/
-
-**The SciKit Learn MOOC**
-^^^
-```{image} https://inria.github.io/scikit-learn-mooc/_static/scikit-learn-logo.png
-:height: 100
-```
-
-A large online course for machine learning with the PyData stack.
-+++
-Explore this book {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: https://uwdata.github.io/visualization-curriculum/intro.html
-
-**Data Science @ UW**
-^^^
-```{image} https://uwdata.github.io/visualization-curriculum/_static/altair-hist.png
-:height: 100
-```
-
-Interactive data visualization with Python, as taught at the University of Washington.
-+++
-Explore this book {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: https://py-pkgs.org/
-
-**Py-Pkgs**
-^^^
-```{image} https://d33wubrfki0l68.cloudfront.net/9ff174183b5af5c3a177bfccd4796454883bc1f7/86cde/_static/py-pkgs-hex.png
-:height: 100
-```
-
-A book describing how to create and use modern packages in the Python ecosystem.
-+++
-Explore this book {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: https://geographicdata.science/book/intro.html
-
-**Geographic Data Science**
-^^^
-```{image} https://geographicdata.science/book/_static/logo.png
-:height: 100
-```
-
-Solving geographic data problems with modern open source tools.
-+++
-Explore this book {fas}`arrow-right`
-:::
-::::
 
 
 # Connect with us
@@ -304,23 +172,4 @@ Check out our community documentation to learn more about us and how we work.
 
 # Acknowledgements
 
-Jupyter Book is supported by an [open community of contributors](https://github.com/executablebooks/jupyter-book/graphs/contributors), many of whom come from [the Executable Books Community](https://executablebooks.org) and [the Jupyter community](https://jupyter.org/community).
 
-::::{grid} 2 2 2 2
-
-:::{grid-item}
-:columns: 4
-
-```{image} https://sloan.org/storage/app/media/uploaded-files/Logo-1B-SMALL-Gold-Blue.png
-:class: m-auto
-:width: 200px
-```
-
-:::
-
-:::{grid-item}
-:columns: 7
-Many thanks to the Sloan Foundation, which [provides support for the Executable Books Project](https://sloan.org/grant-detail/9231).
-:::
-
-::::
