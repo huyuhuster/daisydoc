@@ -50,10 +50,7 @@ You can define metadata for your book (such as its title), add
 a book logo, turn on different "interactive" buttons (such as a
 {term}`Binder` button for pages built from a Jupyter Notebook), and more.
 
-```{margin}
-For more information about your book's configuration file, see
-[](../customize/config.md).
-```
+
 
 Here's an example of a simple `_config.yml` file:
 
@@ -73,14 +70,14 @@ bibtex_bibfiles:
 - `title:` defines a title for the book. It will show up in the left sidebar.
 - `author:` adds the author's name to your book template, for attribution.
 - `logo:` defines a path to an image file for your book's logo (it will also show up in the sidebar).
-- `execute:` contains a collection of configuration options to control [execution and cacheing](../content/execute.md).
+- `execute:` contains a collection of configuration options to control
   - `execute_notebooks: "force"` tells Jupyter Book **force execute** any computational content each time it builds the book. By default, Jupyter Book executes and **caches** all book content.
 - `bibtex_bibfiles:`is a section to define bibliography files for your Jupyter Book.
-  This configuration activates **citations** for your book (see [](../tutorials/references.md) for getting started with citations and references).
+  This configuration activates **citations** for your book  for getting started with citations and references).
 
 :::{admonition} More about `_config.yml`
 :class: tip
-There is much more that you can do with the `_config.yml` file. For example, you can [](source-repository-button) or add [](../interactive/interactive.ipynb). For a complete list of fields for `_config.yml`, see [](../customize/config.md).
+There is much more that you can do with the `_config.yml` file. For example, you can or add . For a complete list of fields for `_config.yml`.
 :::
 
 Check out the other content in your configuration file, and reference it against the pages in this documentation to see what it does.
@@ -110,22 +107,10 @@ For `jb-book`, subsequent chapters can be added under the `chapters:` section in
 Each entry relates to a file, and they should be added as names with **no extensions** and **relative to your book's root folder.**
 The title of each chapter will be inferred from the title in your files.
 
-:::{admonition} More about `_toc.yml`
-:class: tip
-You can specify more complex book configurations with your `_toc.yml` file. For example, you can specify **parts**, **sections**, and control **custom titles**. For more information about your book's table of contents file, see [](../structure/toc.md).
-:::
+
 
 ### Book content
 
-A collection of text files make up your book's content. These can be one of several types of files, such as markdown (`.md`), Jupyter Notebooks (`.ipynb`) or reStructuredText (`.rst`) files (see [](../file-types/index.md) for a full list).
-
-In the above example, there were three files listed:
-
-- a **Markdown** file (`markdown.md`)
-- a **Jupyter Notebook** (`notebooks.ipynb`)
-- a **MyST Markdown Notebook** (`markdown-notebooks.md`)
-
-We'll cover each in the next section.
 
 ## Content files
 
@@ -138,9 +123,6 @@ It is very popular and used across many different technology platforms.
 
 Markdown files come in slight variations, often called *flavors of markdown*.
 There are two flavors of markdown that Jupyter Book supports:
-
-- [CommonMark markdown](https://commonmark.org/) - a markdown standard that is very common.
-- [MyST Markdown](../content/myst.md) - an extension of CommonMark with extra functionality for enriched documents.
 
 Let's take a look at one of the markdown files in the template book, `intro.md`:
 
@@ -180,9 +162,9 @@ Above you see several different kinds of structure:
   e=mc^2
   ```
 
-All content files must have a page title (specified as the first header). All subsequent headers must increase linearly (so no jumps from H1 to H3). See [](rules-all-content-types) for more rules that all content must adhere to.
+All content files must have a page title (specified as the first header). All subsequent headers must increase linearly (so no jumps from H1 to H3). for more rules that all content must adhere to.
 
-For more information about MyST markdown and all the things you can do with it, see [](../content/myst.md).
+For more information about MyST markdown and all the things you can do with it.
 
 
 ### Jupyter Notebooks (`.ipynb`)
@@ -194,12 +176,11 @@ Each notebook is associated with a **kernel** (aka, Python, R, Julia, etc) that 
 By default, when Jupyter Book builds your book, **notebooks will be executed and their outputs cached**. On subsequent builds, notebook pages will be re-executed only if their code has changed.
 
 :::{margin} ✨Notebooks with text files✨
-You can also store Jupyter Notebooks as markdown files or other text files. See [](../file-types/myst-notebooks.md) and [](../file-types/jupytext.Rmd).
+You can also store Jupyter Notebooks as markdown files or other text files. 
 :::
 
-Any outputs generated by the notebook will be inserted into your built book (though they may not be in your input notebook). This way you do not need to store the notebook's outputs with your repository. See [](../content/execute.md) for more information.
 
-There are many other interesting things that you can do with notebook content as a part of your book. We recommend checking out [](../content/code-outputs.md) as well as [](../interactive/interactive.md) to get started with Jupyter notebooks.
+
 
 
 ### MyST Markdown Notebooks (`.md`, and other text formats)
