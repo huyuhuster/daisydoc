@@ -23,7 +23,7 @@ Data analysis integrated software system.
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
 [![](https://img.shields.io/github/stars/huyuhuster/daisydoc?style=social)](https://github.com/huyuhuster/daisydoc)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.1051/epjconf/20212510402)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.1051/epjconf/202125104020)
 ```
 :::
 ::::
