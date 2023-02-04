@@ -1,9 +1,9 @@
 #######################################################################################
 # Book settings
-title: ""
+title: "Daisy Documentation"
 logo: images/logo-wide.svg
-author: The Jupyter Book Community
-email: choldgraf@berkeley.edu
+author: The Daisy group
+email: huyu@ihep.ac.cn
 description: >- # this means to ignore newlines until "baseurl:"
   This is an example book built with Jupyter Books.
 
@@ -27,8 +27,8 @@ html:
   baseurl: https://jupyterbook.org/
 
 repository:
-  url: https://github.com/executablebooks/jupyter-book
-  branch: master
+  url: https://github.com/huyuhuster/daisydoc 
+  branch: readdocjb
   path_to_book: docs
 
 launch_buttons:
