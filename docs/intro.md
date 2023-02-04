@@ -1,5 +1,5 @@
 ---
-title: Books with Jupyter
+title: Daisy Documentation 
 ---
 
 ::::{grid} 2
@@ -9,7 +9,7 @@ title: Books with Jupyter
 :columns: 4
 :class: sd-m-auto
 
-<img src="images/logo-square.svg" />
+<img src="images/logo-square.png" />
 
 :::
 
