@@ -19,7 +19,7 @@ parts:
 
 - caption: Development
   chapters:
-  - file: customize/config
+  - file: start/create
   
 
 - caption: Download & Installation
