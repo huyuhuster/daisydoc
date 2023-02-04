@@ -8,7 +8,6 @@ another markup language that is common in the Python documentation community.
 :::{warning}
 Writing content in reStructuredText is only recommended for users who are already
 familiar with it.
-For others, we recommend using [MyST Markdown](../content/myst.md),
 which has all of the same features of rST and Sphinx, but with a Markdown flavour.
 :::
 
@@ -22,7 +21,6 @@ reading [the Sphinx rST documentation](https://www.sphinx-doc.org/es/stable/rest
 
 ## Including reStructuredText in Markdown
 
-To insert rST into Markdown, you can use the [eval-rst directive](myst-parser:syntax/directives/parsing):
 
 ````md
 ```{eval-rst}
