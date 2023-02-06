@@ -59,14 +59,14 @@ parts:
         - file: workbenchinterfaceplug
         - file: workbenchinterface
          
-     - file: start/interfaceweb
-       sections:
-       - file: start/webwidgetsintro
-       - file: start/webwidgetsusual
-       - file: start/webwidgetsevent
-       - file: start/weblayout
-       - file: start/webinteract
-       - file: start/webasyncwidgets
+    - file: start/interfaceweb
+      sections:
+      - file: start/webwidgetsintro
+      - file: start/webwidgetsusual
+      - file: start/webwidgetsevent
+      - file: start/weblayout
+      - file: start/webinteract
+      - file: start/webasyncwidgets
        
      
        
