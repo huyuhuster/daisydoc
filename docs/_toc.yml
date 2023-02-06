@@ -21,6 +21,11 @@ parts:
       sections:
       - file: start/devevweb
       - file: start/devevqt
+  chapters:
+  - file: start/algorithmdev
+    sections:
+    - file: start/algorithmdevcpp
+    - file: start/algorithmdevpython
 
 - caption: Download & Installation
   chapters:
