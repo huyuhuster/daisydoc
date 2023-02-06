@@ -1,7 +1,5 @@
 (structure:index)=
-# Structure and organize content
+# Daisy workbench
 
-These sections describe how to organize the structure of your book or article.
+These sections describe how to use the daisy workbench.
 
-```{tableofcontents}
-```

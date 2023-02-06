@@ -5,20 +5,22 @@ parts:
   chapters:
   - file: start/your-first-book
   - file: start/overview
+    sections:
+    - file: start/framework-core
 
 - caption: User Guides
   chapters:
   - file: basics/organize
-    sections:
-    - file: structure/toc
-      sections:
-      - file: file-types/markdown
-    - file: basics/create
 
 - caption: Development
   chapters:
-  - file: customize/config
-  
+  - file: start/create
+    sections:
+    - file: start/devaccount
+    - file: start/devev
+      sections:
+      - file: start/devaccountweb
+      - file: start/devaccountqt
 
 - caption: Download & Installation
   chapters:

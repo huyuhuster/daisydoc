@@ -1,22 +1,25 @@
-# Create your first book
+# Overview of Daisy project
 
-In this tutorial, we'll cover the basics of the Jupyter Book ecosystem, and step you through creating, building, and publishing your first book.
+The Daisy project provides tools to support the processing of data from Advanced synchrotron radiation light source, such as High Energy Photon Source，HEPS. This data can be gathered from experiments or as the result of simulation. The project provides:
 
-:::{admonition} What you should already know
-In order to complete this tutorial, you should be relatively familiar with using the command line, as well as using a text editor.
-:::
+  - a Python library, daisy, providing custom high-performance algorithms and data structures for processing compatible data
 
-:::{admonition} A note for Windows users
-:class: warning
+  - a general-purpose graphical user interface, DaisyWorkench, for visualisation of raw or processed data including
 
-Jupyter Book is now also tested against Windows OS 😀
+       - matplotlib-based plotting
 
-However, there is a known incompatibility for notebook execution when using Python 3.8.
+       - script editor allowing immediate script execution
 
-See [](working-on-windows)
-:::
+       - a slice viewer for slicing through higher-dimensional data
 
-See the sections of this tutorial to the left to get started!
+       - custom graphical user interfaces for a variety of scientific techniques to reduce the burden on users understanding how to process their data
 
-```{tableofcontents}
-```
+The tools are:
+
+   - open source
+
+   - 64-bit, cross platform: Linux, Windows
+
+   - built using many other open source projects.
+
+

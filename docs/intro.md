@@ -23,9 +23,10 @@ Data analysis integrated software system.
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
 [![](https://img.shields.io/github/stars/huyuhuster/daisydoc?style=social)](https://github.com/huyuhuster/daisydoc)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.1051/epjconf/20212510402)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.1051/epjconf/202125104020)
 ```
-
+:::
+::::
 
 DAISY(Data analysis integrated software system)是利用面向对象技术和c++、Python两种语言，最初是为先进光源在线数据处理而设计开发的软件框架。 在设计之初参考了目前世界上先进的数据处理软件项目，如英国钻石光源开发的数据分析软件 DAWN，英国ISIS中子与缪子源开发的数据分析软件Mantid，欧洲同步辐射光源开发的在线数据处理软件框架EDNA，以及高能物理数据处理软件框架Gaudi。 目标设计实现一个通用的、具有良好扩展性的基础软件架构，集成多种方法学算法和工具，屏蔽计算架构的复杂性和计算资源的多样性，为上层应用软件和用户提供统一和简单的调用接口，并在此基础上开发数据可视化和分析桌面等通用组件，以期形成一个丰富和繁荣的软件生态环境。
 
@@ -50,7 +51,7 @@ Here are a few ways to connect more with us.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://github.com/orgs/executablebooks/discussions
+:link: https://github.com/huyuhuster/daisydoc/discussions
 :class-header: bg-light
 
 💬 Ask and answer questions
@@ -61,7 +62,7 @@ We have community discussions, talk about ideas, and share general questions and
 :::
 
 :::{grid-item-card}
-:link: https://github.com/orgs/executablebooks/discussions
+:link: https://github.com/huyuhuster/daisydoc/discussions
 :class-header: bg-light
 
 👍 Vote for new features
@@ -72,7 +73,7 @@ You can find a list of the top issues in the Executable Books issue leader board
 :::
 
 :::{grid-item-card}
-:link: contribute/intro.md
+:link: https://code.ihep.ac.cn/hepscc/Daisy
 :class-header: bg-light
 
 🙌 Contribute to projects
