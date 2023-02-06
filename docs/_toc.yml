@@ -53,10 +53,10 @@ parts:
       - file: start/qtmodelexample
       - file: start/qtmatplotlibmvc
       - file: start/qtmultiview
-      - file: workbenchinterface
+      - file: start/workbenchinterface
         sections:
-        - file: workbenchinterfacedev
-        - file: workbenchinterfaceplug
+        - file: start/workbenchinterfacedev
+        - file: start/workbenchinterfaceplug
    
          
     - file: start/interfaceweb
