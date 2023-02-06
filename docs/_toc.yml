@@ -4,9 +4,7 @@ parts:
 - caption: Overview
   chapters:
   - file: start/your-first-book
-    sections:
-    - file: start/overview
-  - file: tutorials/references
+  - file: start/overview
 
 - caption: User Guides
   chapters:
