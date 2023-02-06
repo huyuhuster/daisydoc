@@ -6,7 +6,7 @@
 - 定义一个构造函数，它接受一个 string 形参;  
 - 实现基类中的 3 个抽象方法，initialize()， execute() 和 finalize(); bool返回值表示执行状态。 如果有任何错误，返回值应该是false，应用程序将停止。
 
-#### 类定义  
+## 类定义  
 
 类的定义中我们还涉及了属性的概念，属性被定义为算法类的数据成员。
 
@@ -36,7 +36,7 @@ class FirstAlg : public AlgBase
 #endif
 ```
 
-####  算法声明 
+##  算法声明 
 
 ​        算法必须显式声明，以便在加载模块时将其注册到框架中。这是通过宏 DECLARE_ALGORITHM 完成的，它接受算法类名作为参数。建议将声明放在源文件的开头。
 
@@ -44,7 +44,7 @@ class FirstAlg : public AlgBase
 DECLARE_ALGORITHM(FirstAlg);
 ```
 
-####  属性
+##  属性
 
 ​        属性是在Python中运行时可配置的c++变量。在算法中，属性可以通过declProp()方法声明。这个方法有两个参数，第一个是属性的名称，第二个是它的相关变量。
 
@@ -62,7 +62,7 @@ Std::map, 带有 scalar 键类型和 scalar 值类型
 declProp("TheValue", m_value = 1);
 ```
 
-####  日志
+##  日志
 
 我们可以通过log打印任何信息，如std::cout
 
@@ -93,7 +93,7 @@ Daisy 有6个日志级别。从最低到最高，
 
 <!--我们可以通过Task全局设置日志级别，或者为每个DLE组件设置不同的日志级别。日志级别较低的日志将不会显示在屏幕上。-->
 
-####  算法实现
+##  算法实现
 
 下面是源文件(firstalgl .cc)的实现，
 
