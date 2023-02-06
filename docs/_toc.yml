@@ -78,4 +78,5 @@ parts:
 
 - caption: Citing & contribution
   chapters:
-  - file: customize/config
+  - file: customize/citing
+  - file: customize/contribution
