@@ -14,11 +14,11 @@ import ipywidgets as widgets
 
 ​        小部件有自己的显示 **repr**，允许使用 IPython 的显示框架来显示它们。构造并返回一个 IntSlider 会自动显示小部件(如下所示)。小部件显示在代码单元格下方的输出区域中。清除单元格输出也会删除小部件。
 
-![interslide](C:\HUYU_dir\work\HEPS\Daisy\文档\picture\interslide.png)
+![interslide](../images/interslide.png)
 
 也可以通过 display(...) 来显示 widgets：
 
-![interslide_display](C:\HUYU_dir\work\HEPS\Daisy\文档\picture\interslide_display.png)
+![interslide_display](../images/interslide_display.png)
 
 如果显示同一个小部件两次，则前端中显示的实例将保持同步。小部件在后端由单个对象表示。每次显示小部件时，都会在前端创建该对象的新表示形式。这些表示称为视图。
 
