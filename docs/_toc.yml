@@ -26,6 +26,50 @@ parts:
     sections:
     - file: start/algorithmdevcpp
     - file: start/algorithmdevpython
+    
+  - file: start/workflowdev
+     sections:
+     - file: start/workflowdevpython
+   
+  - file: start/interfacedev
+     sections:
+     - file: start/mvcmode
+     - file: start/interfaceqt
+       sections:
+       - file: start/qtbutton
+       - file: start/qtlabel
+       - file: start/qtlayouts
+       - file: start/qtlineedit
+       - file: start/qtcombobox
+       - file: start/qtspinbox
+       - file: start/qttable
+       - file: start/qtview
+       - file: start/qtviewsigre
+       - file: start/qtviewsigex
+       - file: start/qtcontroller
+       - file: start/qtcontrollervir
+       - file: start/qtcontrollermock
+       - file: start/qtmodelsimple
+       - file: start/qtmodelexample
+       - file: start/qtmatplotlibmvc
+       - file: start/qtmultiview
+       - file: workbenchinterface
+         sections:
+         - file: workbenchinterfacedev
+         - file: workbenchinterfaceplug
+         - file: workbenchinterface
+         
+     - file: start/interfaceweb
+       sections:
+       - file: start/webwidgetsintro
+       - file: start/webwidgetsusual
+       - file: start/webwidgetsevent
+       - file: start/weblayout
+       - file: start/webinteract
+       - file: start/webasyncwidgets
+       
+     
+       
 
 - caption: Download & Installation
   chapters:
