@@ -107,12 +107,12 @@ sphinx:
         - fmt: Rmd
     rediraffe_branch: 'master'
     rediraffe_redirects:
-      content-types/index.md: file-types/index.md
-      content-types/markdown.md: file-types/markdown.md
+      # content-types/index.md: file-types/index.md
+      # content-types/markdown.md: file-types/markdown.md
       # content-types/notebooks.ipynb: file-types/notebooks.ipynb
-      content-types/myst-notebooks.md: file-types/myst-notebooks.md
-      content-types/jupytext.md: file-types/jupytext.Rmd
-      content-types/restructuredtext.md: file-types/restructuredtext.md
+      # content-types/myst-notebooks.md: file-types/myst-notebooks.md
+      # content-types/jupytext.md: file-types/jupytext.Rmd
+      # content-types/restructuredtext.md: file-types/restructuredtext.md
       customize/toc.md: structure/toc.md
 
 
