@@ -48,7 +48,7 @@ class CalculatorManager(QtWidgets.QMainWindow):
 
 View.py 文件定义了interface的外观，本例的界面如下图所示，为一个包含5个项目的table。前面四个项目为输入项目，分别为：输入文件选择、h5文件内的数据路径、算子选择（max/min）、展示类型选择（打印在屏幕上/更新计算结果/打印和更新），最后一个项目为计算结果。
 
-![image-20220728180848011](C:\Users\huyuh\AppData\Roaming\Typora\typora-user-images\image-20220728180848011.png)
+![image-20220728180848011](../images/qth5.png)
 
 View.py 的代码如下：
 
