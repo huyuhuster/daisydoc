@@ -14,13 +14,13 @@ parts:
 
 - caption: Development
   chapters:
-  - file: start/create
+  - file: start/devenvir
     sections:
     - file: start/devaccount
     - file: start/devev
       sections:
-      - file: start/devaccountweb
-      - file: start/devaccountqt
+      - file: start/devevweb
+      - file: start/devevqt
 
 - caption: Download & Installation
   chapters:
