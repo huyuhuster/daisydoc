@@ -28,7 +28,7 @@ class MainView(QtWidgets.QWidget):
 
 main只需要导入main_view:
 
-```pytho
+```python
 class Demo(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
