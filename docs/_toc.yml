@@ -11,9 +11,6 @@ parts:
 - caption: User Guides
   chapters:
   - file: basics/organize
-    sections:
-    - file: structure/toc
-    - file: basics/create
 
 - caption: Development
   chapters:
