@@ -15,7 +15,11 @@ parts:
 - caption: Development
   chapters:
   - file: start/create
-  
+    chapters:
+    - file: start/devaccount
+      sections:
+      - file: start/devaccountweb
+      - file: start/devaccountqt
 
 - caption: Download & Installation
   chapters:
