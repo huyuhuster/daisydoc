@@ -73,8 +73,8 @@ parts:
 
 - caption: Download & Installation
   chapters:
-  - file: reference/_changelog
-    title: Change log
+  - file: reference/download
+  - file: reference/installation
 
 - caption: Citing & contribution
   chapters:
