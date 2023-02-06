@@ -15,7 +15,7 @@ parts:
 - caption: Development
   chapters:
   - file: start/create
-    chapters:
+    sections:
     - file: start/devaccount
       sections:
       - file: start/devaccountweb
