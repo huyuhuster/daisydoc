@@ -65,11 +65,11 @@ jupiter交互小部件有一个layout属性，它暴露了许多影响小部件�
 
 下面的例子展示了如何调整一个按钮的大小，使其视图的高度为80px，宽度为可用空间的50%:
 
-![layout1](C:\HUYU_dir\work\HEPS\Daisy\文档\picture\layout1.png)
+![layout1](../images/layout1.png)
 
 layout属性可以在多个小部件之间共享并直接分配。
 
-![layout2](C:\HUYU_dir\work\HEPS\Daisy\文档\picture\layout2.png)
+![layout2](../images/layout2.png)
 
 **描述 （Description）**
 
