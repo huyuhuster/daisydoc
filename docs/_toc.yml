@@ -10,7 +10,13 @@ parts:
 
 - caption: User Guides
   chapters:
-  - file: basics/organize
+  - file: tutorial/workbench
+  - file: tutorial/interface
+    sections:
+    - file: tutorial/spectroscopy
+      sections:
+      - file: tutorial/spectroscopymatch
+      - file: tutorial/pcalcf
 
 - caption: Development
   chapters:
