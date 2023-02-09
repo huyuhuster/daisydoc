@@ -15,8 +15,8 @@ parts:
     sections:
     - file: tutorial/spectroscopy
       sections:
-      - file: tutorial/spectroscopymatch
-      - file: tutorial/pcalcf
+      - file: tutorial/XASmatch
+      - file: tutorial/XASpcalcf
 
 - caption: Development
   chapters:
