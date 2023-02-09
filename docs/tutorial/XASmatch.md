@@ -6,13 +6,16 @@
 
 <img src="../images/framework_xasmat.png" align=center />
 
-## 程序下载
+## 程序下载和安装
 
+点击下载： [软件包](https://docs.ihep.ac.cn/link/AADB80E1EBF844447296ECFE2D84F49F03)
+
+本程序无需安装，下载之后解压即可直接使用。
 
 ## 程序启动
-我们已配置好的同步软件会自动将线站计算机上的数据同步目录的数据自动同步到桌面的“XASMatch_data”文件夹中，如图4上图所示。在进入登陆界面后，我们只需点击桌面上的“XASMatch”图标即可进入谱学匹配程序，界面如下图所示。
+待软件包解压缩之后，进入软件包“谱学匹配”文件夹中，如下图左图所示。我们只需点击文件夹中的的“谱学匹配”图标即可进入谱学匹配程序，界面如下图所示。
 
-<img src="../images/launch_xasmat.png" align=center />
+<img src="../images/launch_xasmat1.png" align=center />
 
 ## 使用流程
 进入该程序界面后，我们只需要点击“选择实验谱”按钮选择待匹配的实验谱，点击桌面上的“XASMatch_data”文件夹选择从线站计算机同步过来的数据，这里我们选取用于测试的ZnS吸收谱数据“ZnS_T_norm.dat”，点击“Open”即可选中该数据，如下图所示。
