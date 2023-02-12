@@ -13,26 +13,78 @@ parts:
   - file: tutorial/workbench
   - file: tutorial/interface
     sections:
+    - file: tutorial/imaging
     - file: tutorial/spectroscopy
       sections:
-      - file: tutorial/spectroscopymatch
-      - file: tutorial/pcalcf
+      - file: tutorial/XASmatch
+      - file: tutorial/XASpcalcf
+    - file: tutorial/XRDSAXS
 
 - caption: Development
   chapters:
-  - file: start/create
+  - file: start/devenvir
     sections:
     - file: start/devaccount
     - file: start/devev
       sections:
-      - file: start/devaccountweb
-      - file: start/devaccountqt
+      - file: start/devevweb
+      - file: start/devevqt
+      
+  - file: start/algorithmdev
+    sections:
+    - file: start/algorithmdevcpp
+    - file: start/algorithmdevpython
+    
+  - file: start/workflowdev
+    sections:
+    - file: start/workflowdevpython
+   
+  - file: start/interfacedev
+    sections:
+    - file: start/mvcmode
+    - file: start/interfaceqt
+      sections:
+      - file: start/qtbutton
+      - file: start/qtlabel
+      - file: start/qtlayouts
+      - file: start/qtlineedit
+      - file: start/qtcombobox
+      - file: start/qtspinbox
+      - file: start/qttable
+      - file: start/qtview
+      - file: start/qtviewsigre
+      - file: start/qtviewsigex
+      - file: start/qtcontroller
+      - file: start/qtcontrollervir
+      - file: start/qtcontrollermock
+      - file: start/qtmodelsimple
+      - file: start/qtmodelexample
+      - file: start/qtmatplotlibmvc
+      - file: start/qtmultiview
+      - file: start/workbenchinterface
+        sections:
+        - file: start/workbenchinterfacedev
+        - file: start/workbenchinterfaceplug
+   
+         
+    - file: start/interfaceweb
+      sections:
+      - file: start/webwidgetsintro
+      - file: start/webwidgetsusual
+      - file: start/webwidgetsevent
+      - file: start/weblayout
+      - file: start/webinteract
+      - file: start/webasyncwidgets
+       
+     
+       
 
 - caption: Download & Installation
   chapters:
-  - file: reference/_changelog
-    title: Change log
+  - file: reference/download
+  - file: reference/installation
 
 - caption: Citing & contribution
   chapters:
-  - file: customize/config
+  - file: customize/citing
+  - file: customize/contribution
