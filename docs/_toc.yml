@@ -14,6 +14,8 @@ parts:
   - file: tutorial/interface
     sections:
     - file: tutorial/imaging
+    sections:
+      - file: tutorial/hepsct
     - file: tutorial/spectroscopy
       sections:
       - file: tutorial/XASmatch
