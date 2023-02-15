@@ -14,7 +14,7 @@ parts:
   - file: tutorial/interface
     sections:
     - file: tutorial/imaging
-    sections:
+      sections:
       - file: tutorial/hepsct
     - file: tutorial/spectroscopy
       sections:
