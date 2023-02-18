@@ -1,6 +1,6 @@
 # Python 算法开发
 
-​       Python 形式的算法实现与C++形式类似，需要实现基类中的 3 个抽象方法，initialize()， execute() 和 finalize();下面以实现 tomopy 重建算法为例，具体实现如下：  
+&emsp;&emsp;Python 形式的算法实现与C++形式类似，需要实现基类中的 3 个抽象方法，initialize()， execute() 和 finalize();下面以实现 tomopy 重建算法为例，具体实现如下：  
 
 ```python
 from __future__ import print_function
