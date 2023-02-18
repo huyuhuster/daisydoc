@@ -1,6 +1,6 @@
 # 工作流实现方法
 
-      工作流一般由线站科学家实现。工作流和算法一样，也必须实现 initialize、execute和 finalize三个方法，对应工作流初始化、执行和销毁三个阶段。具体实现参考下面是 CT 图像重建的工作流。
+&emsp;&emsp;工作流一般由线站科学家实现。工作流和算法一样，也必须实现 initialize、execute和 finalize三个方法，对应工作流初始化、执行和销毁三个阶段。具体实现参考下面是 CT 图像重建的工作流。
 
 ```python
 #!/usr/bin/env python
@@ -69,4 +69,4 @@ if __name__ == "__main__":
 
 ```
 
-其中 self.engine 和 self.engine.datastore 为初始化时导入的工作流引擎以及对应的数据仓库。在工作流执行过程中，不同的工作流引擎和数据仓库对应不同的计算环境； self.engine 和 self.engine.datastore 分别维护一组 key-value字典，可以通过算法名和数据对象名，访问算法对象和数据对象。
+&emsp;&emsp;其中 self.engine 和 self.engine.datastore 为初始化时导入的工作流引擎以及对应的数据仓库。在工作流执行过程中，不同的工作流引擎和数据仓库对应不同的计算环境； self.engine 和 self.engine.datastore 分别维护一组 key-value字典，可以通过算法名和数据对象名，访问算法对象和数据对象。
