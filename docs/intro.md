@@ -92,7 +92,7 @@ To join, check out our contributing guide.
 
 ^^^
 
-Daisy framework is developed by the daisy group of IHEP CC.
+Daisy framework is developed by the daisy group of HEPS CC.
 Check out our community documentation to learn more about us and how we work.
 :::
 ::::
