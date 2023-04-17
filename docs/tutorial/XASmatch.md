@@ -15,7 +15,7 @@
 ## 程序启动
 待软件包解压缩之后，可得到谱学匹配的可执行文件XASCurveMatch.exe和本地数据库文件夹database，如下图左图所示。我们只需点击可执行文件"XASCurveMatch.exe"即可进入谱学匹配程序，界面如下图所示。
 
-<img src="../images/launch_xasmat1.png" align=center />
+<img src="../images/launch_xasmat-1.png" align=center />
 
 ## 使用流程
 进入该程序界面后，我们只需要点击“选择实验谱”按钮选择待匹配的实验谱，选择样品数据文件夹，此时会自动将文件夹内的样品数据进行加载并展示在界面右侧的样品列表里，我们选取用于测试的ZnS吸收谱数据“ZnS_T_norm.dat”，如下图所示。
