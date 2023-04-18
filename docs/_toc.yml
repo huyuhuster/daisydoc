@@ -86,7 +86,8 @@ parts:
   - file: reference/download
   - file: reference/installation
 
-- caption: Citing & contribution
+- caption: Citing & contribution & Contact
   chapters:
   - file: customize/citing
   - file: customize/contribution
+  - file: customize/contact
