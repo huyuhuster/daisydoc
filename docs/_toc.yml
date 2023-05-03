@@ -14,11 +14,18 @@ parts:
   - file: tutorial/interface
     sections:
     - file: tutorial/imaging
+      sections:
+      - file: tutorial/hepsct
     - file: tutorial/spectroscopy
       sections:
       - file: tutorial/XASmatch
       - file: tutorial/XASpcalcf
     - file: tutorial/XRDSAXS
+      sections:
+      - file: tutorial/PDF
+    - file: tutorial/astronomy
+      sections:
+      - file: tutorial/astronomy/hxmt
 
 - caption: Development
   chapters:
@@ -84,7 +91,8 @@ parts:
   - file: reference/download
   - file: reference/installation
 
-- caption: Citing & contribution
+- caption: Citing & contribution & Contact
   chapters:
   - file: customize/citing
   - file: customize/contribution
+  - file: customize/contact
