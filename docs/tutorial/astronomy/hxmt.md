@@ -3,7 +3,7 @@
 ## 1. 介绍
 
 本应用将 HXMT 数据处理流程进行可视化，以 web 页面的形式为用户提供服务。主要有以下特点：
-- 前端基于 jupyterlab 生态，通过 web 浏览器为用户提供软件、算法开发以及数据处理环境。
+- 前端基于 Jupyterlab 生态，通过 web 浏览器为用户提供软件、算法开发以及数据处理环境。
 - 开箱即用，用户不用下载、安装软件和配置计算环境。服务始终保持最新版本。
 - 资源弹性可伸缩，根据不同的数据处理任务配置不同的资源规模。
 - 不受操作系统、地域限制，随时随地可以通过浏览器访问服务。
@@ -23,7 +23,7 @@
 :::
 
 ## 3.数据处理服务选择
-在数据处理服务选取界面中选取 ‘HXMT data analysis’选项，点击页面顶部 ‘启动已选择的分析环境’ 按钮进入用户 jupyterlab 界面。JupyterLab 是一种基于 web 的集成开发环境，可以用于编写 notebook、操作终端、编辑 markdown 文本、打开交互模式、查看csv文件及图片，以及开发学科应用。
+在数据处理服务选取界面中选取 ‘HXMT data analysis’选项，点击页面顶部 ‘启动已选择的分析环境’ 按钮进入用户 Jupyterlab 界面。JupyterLab 是一种基于 web 的集成开发环境，可以用于编写 notebook、操作终端、编辑 markdown 文本、打开交互模式、查看csv文件及图片，以及开发学科应用。
 
 <img src="../../images/astronomy/serviceselection.png" align=center />
 
@@ -55,6 +55,7 @@ source sourceEnv.sh
 <img src="../../images/astronomy/dataselect1.png" align=center />
 
 除了默认的按源名称或者/以及观测日期，用户还可以使用更多的条件进行数据筛选。点击‘More search condition’按钮可以调出更多的筛选条件。更多可选的条件包括：坐标，提案类型，提案号，观测起始时间等。点击’Simplify search condition’可以收起不常用的筛选条件。如果想重置筛选条件可以点击‘Condition clear’按钮。确定数据文件存在之后，用户即可进入‘Data process’页面进行数据处理。
+
 <img src="../../images/astronomy/dataselect2.png" align=center />
 
 
