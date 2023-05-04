@@ -9,8 +9,17 @@
 - 不受操作系统、地域限制，随时随地可以通过浏览器访问服务。
 - 终端+用户友好界面，适合不同专业程度的用户。
 
-<img src="../../images/astronomy/workflow.png" align=center />
 
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="../../images/astronomy/workflow.png"
+         alt="HXMT workflow"
+         align=center 
+         style="zoom:80"/>
+    <br>		<!--换行-->
+     图1 HXMT workflow	<!--标题-->
+    </center>
+</div>
 
 ## 2.用户登录
 
@@ -50,6 +59,7 @@ source sourceEnv.sh
 用户在观测号列表选择观测号之后，界面将列出所有可选的曝光号。用户选择曝光号之后，后台将自动解析数据文件目录，如果数据文件不存在，将在下方log模块中提示用户。数据详细信息表格可以按照观测时长进行重新排序。
 
 <img src="../../images/astronomy/dataselect1.png" align=center />
+
 
 &emsp;&emsp;除了默认的按源名称或者/以及观测日期，用户还可以使用更多的条件进行数据筛选。点击‘More search condition’按钮可以调出更多的筛选条件。更多可选的条件包括：坐标，提案类型，提案号，观测起始时间等。点击’Simplify search condition’可以收起不常用的筛选条件。如果想重置筛选条件可以点击‘Condition clear’按钮。确定数据文件存在之后，用户即可进入‘Data process’页面进行数据处理。
 
