@@ -9,17 +9,8 @@
 - 不受操作系统、地域限制，随时随地可以通过浏览器访问服务。
 - 终端+用户友好界面，适合不同专业程度的用户。
 
+<img src="../../images/astronomy/workflow.png" align=center />
 
-<div>			<!--块级封装-->
-    <center>	<!--将图片和文字居中-->
-    <img src="../../images/astronomy/workflow.png"
-         alt="HXMT workflow"
-         align=center 
-         style="zoom:80"/>
-    <br>		<!--换行-->
-     图1 HXMT workflow	<!--标题-->
-    </center>
-</div>
 
 ## 2.用户登录
 
