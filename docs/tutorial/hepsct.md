@@ -43,9 +43,28 @@ HEPSCT 可以接受 TIFF（未压缩的Tiff，8bit uint，16bit uint和32bit flo
 
 ## HEPSCT 界面及操作
 
-HEPSCT 软件的界面如图1所示，其中包含4个选项卡页，每个选项卡的具体功能如下：
+HEPSCT 软件的界面如下图所示，其中包含5个选项卡页，每个选项卡的具体功能如下：
 
-- Load Images： 图像的导入，包含投影、背景以及暗场图像的导入和预览；
+<img src="../images/imaging/HEPSCT_UI.png" align=center />
+
+
+- Projections：图像的导入，包含投影、背景以及暗场图像的导入和预览；
 - Preprocess: 重建预处理，包含降噪、扣除背景、去除负值、选区、背景归一化以及投影图Line Profile预览等功能；
-- Shifts Align： 图像的抖动校正，提供手动和自动两种校正模式；
+- Alignment： 图像的抖动校正，提供手动和自动两种校正模式；
 - Reconstruction： 包含重建算法选择、环形伪影去除、参数设置、转轴矫正以及切片预览等功能
+- Result: 重建结果查看
+
+HEPSCT 数据处理模式及流程如下图所示，主要包括数据加载，预处理，图像校正，数据重建，以及后处理：
+
+<img src="../images/imaging/HEPSCT_workflow.png" align=center />
+
+
+# 微米CT数据重建流程
+
+微米CT数据重建流程，主要包括图像导入、背景扣除（预处理）以及重建共三部分。具体重建流程和界面操作如下：
+
+## 图像导入
+
+
+1) 点击Load Image切换至图像导入页面；
+
