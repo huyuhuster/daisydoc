@@ -65,6 +65,7 @@ HEPSCT 数据处理模式及流程如下图所示，主要包括数据加载，�
 
 ## 图像导入
 
+<img src="../images/imaging/HEPSCT_LoadData1.png" align=center />
 
 1) 点击Projections 切换至图像导入页面；
 2) 点击2 Load按钮导入投影数据；
@@ -76,6 +77,8 @@ HEPSCT 数据处理模式及流程如下图所示，主要包括数据加载，�
 ## 背景扣除（预处理）
 
 点击Preprocess Tab进入预处理页面（如下图所示）。
+
+<img src="../images/imaging/HEPSCT_Preprocess1.png" align=center />
 
 1) 图像降噪算法选择（注：可根据实际情况选择算法，默认是None）；
 2) 背景扣除,具体计算公式如下：
@@ -94,6 +97,8 @@ $$
 ## 重建 
 
 点击Reconstruction Tab进入重建页面（如下图所示）。
+
+<img src="../images/imaging/HEPSCT_Rec3.png" align=center />
 
 1) 重建算法选择：FBP、grid（速度快）、EM等多种算法（默认grid）；
 2) 迭代次数，默认20；
@@ -118,12 +123,23 @@ $$
 21) 点击Reconstruction按钮(编号20)开始扫描；
 22) 若需要中途停止采集点击Stop按钮(编号21)。
 
+## 重建结果查看
+
+点击Result Tab进入重建页面（如下图所示）。
+
+<img src="../images/imaging/HEPSCT_Result1.png" align=center />
+
+1) 点击2 Select 按钮导入重建断层数据；
+2) 点击下方列表查看重建结果
+3) 也可以点击3 Play 按钮，自动播放重建结果
 
 # 纳米CT数据重建流程
 
 纳米CT数据重建流程，主要包括图像导入、背景扣除（预处理）、图像抖动校正以及重建共四部分。具体重建流程和界面操作如下：
 
 ## 图像导入
+
+
 
 1) 点击Load Image切换至图像导入页面；
 2) 点击2 Load按钮导入投影数据；
