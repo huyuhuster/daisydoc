@@ -4,11 +4,11 @@
 
 本项目提供了插件jupyter_app_launcher的安装包：
 
-==jupyter_app_launcher-0.1.6-py3-none-any.whl #E91E63==
+* jupyter_app_launcher-0.1.6-py3-none-any.whl 
 
 安装该插件的命令为：
 
-==pip install jupyter_app_launcher-0.1.6-py3-none-any.whl #E91E63==
+* pip install jupyter_app_launcher-0.1.6-py3-none-any.whl 
 
 该插件在菜单栏提供了 Home菜单，可以点击菜单"Return Home"返回jupyterhub的首页；
 
@@ -18,11 +18,11 @@
 
 插件jupyter_app_launcher的配置文件位置为：
 
-==/opt/jupyter_app_launcher/config.yaml #F44336==
+* /opt/jupyter_app_launcher/config.yaml
 
 指向该地址的环境变量为==JUPYTER_APP_LAUNCHER_PATH #F44336==，用户使用以下命令使该环境变量生效：
 
-==export JUPYTER_APP_LAUNCHER_PATH="/opt/jupyter_app_launcher" #F44336==
+* export JUPYTER_APP_LAUNCHER_PATH="/opt/jupyter_app_launcher" 
 
 关于配置文件的书写规则如下，原文可参考https://jupyter-app-launcher.readthedocs.io/en/latest/usage.html.
 
