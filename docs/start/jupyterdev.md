@@ -26,51 +26,51 @@
 
 关于配置文件的书写规则如下，原文可参考https://jupyter-app-launcher.readthedocs.io/en/latest/usage.html.
 
-- title: Dashboard example
-  description: Example of opening a notebook in dashboard mode without Voila
-  source: ../../samples/sample.ipynb
-  cwd: ../../samples
-  type: notebook-grid
+- title: Dashboard example \
+  description: Example of opening a notebook in dashboard mode without Voila \
+  source: ../../samples/sample.ipynb \
+  cwd: ../../samples \
+  type: notebook-grid 
 
-- title: Notebook example
-  description: Example of opening a notebook in dashboard mode without Voila
-  source: ../../samples/sample.ipynb
-  cwd: ../../samples
-  type: notebook
-  catalog: Another catalog
+- title: Notebook example \
+  description: Example of opening a notebook in dashboard mode without Voila \
+  source: ../../samples/sample.ipynb \
+  cwd: ../../samples \
+  type: notebook \
+  catalog: Another catalog 
 
-- title: Voila example
-  description: Example of opening a notebook in dashboard mode with Voila
-  source: ../../samples/sample.ipynb
-  cwd: ../../samples
-  type: notebook-voila
-  args:
-      theme: dark
-  catalog: Another catalog
+- title: Voila example \
+  description: Example of opening a notebook in dashboard mode with Voila \
+  source: ../../samples/sample.ipynb \
+  cwd: ../../samples \
+  type: notebook-voila \
+  args: \
+      theme: dark \
+  catalog: Another catalog \
 
-- title: WebApp example
-  description: Example of opening a notebook in browser with Voila
-  source: ../../samples/sample.ipynb
-  cwd: ../../samples
-  type: WebApp-voila
-  args:
-      theme: dark
-  catalog: Another catalog
+- title: WebApp example \
+  description: Example of opening a notebook in browser with Voila \
+  source: ../../samples/sample.ipynb \
+  cwd: ../../samples \
+  type: WebApp-voila \
+  args: \
+      theme: dark \
+  catalog: Another catalog 
+ 
+- title: URL example \
+  description: Example of opening a URL in a tab \
+  source: https://jupyterlab.readthedocs.io/en/stable/ \
+  type: url  \
+  catalog: Another catalog \
+  args: \
+      sandbox: [ 'allow-same-origin', 'allow-scripts', 'allow-downloads', 'allow-modals', 'allow-popups'] 
 
-- title: URL example
-  description: Example of opening a URL in a tab
-  source: https://jupyterlab.readthedocs.io/en/stable/
-  type: url
-  catalog: Another catalog
-  args:
-      sandbox: [ 'allow-same-origin', 'allow-scripts', 'allow-downloads', 'allow-modals', 'allow-popups']
-
-- title: Streamlit example
-  description: Example of opening a streamlit app
-  source: http://localhost:$PORT/
-  cwd: ./
-  type: local-server
-  args:
+- title: Streamlit example \
+  description: Example of opening a streamlit app \
+  source: http://localhost:$PORT/ \
+  cwd: ./  \
+  type: local-server \
+  args: \
 
     - streamlit
     - run
@@ -79,21 +79,21 @@
     - --server.port=$PORT
       catalog: Another catalog
 
-  配置文件书写规则如下：
-    ==title #F44336==: lancher页面图标的名称；
-    ==description #F44336==：对该应用的说明；
-    ==source #F44336==：本机资源文件，例如Notebook, voila的源文件，Url， local server的链接地址；
-    ==cwd #F44336==: 弃用；
-    ==type #F44336==: 应用的类型，只能是以下类型之一： 
-  		   'notebook'，
-  		   'notebook-grid'，
-  		   'notebook-voila'，
-  		   'markdown'，
-  		   'local-server'，
-  		   'url'， 
-  		   'webapp';
-   ==args #F44336==: 参数；
-   ==catalog #F44336==：应用的归类，同一类应用在launcher页面放在同一行；
+  配置文件书写规则如下： \
+    title : lancher页面图标的名称；\
+    description ：对该应用的说明； \
+    source ：本机资源文件，例如Notebook, voila的源文件，Url， local server的链接地址； \
+    cwd : 弃用； \
+    type : 应用的类型，只能是以下类型之一：  \
+  		   'notebook'，\
+  		   'notebook-grid'，\
+  		   'notebook-voila'，\
+  		   'markdown'，\
+  		   'local-server'，\
+  		   'url'， \
+  		   'webapp'; \
+   args : 参数；\
+   catalog ：应用的归类，同一类应用在launcher页面放在同一行；
 
 如果修改了配置文件，则需要重启jupyter lab服务，目前无法做到实时更改实时显示。
 	 
