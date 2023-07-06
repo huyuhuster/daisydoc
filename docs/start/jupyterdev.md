@@ -6,6 +6,10 @@
 
 * jupyter_app_launcher-0.1.6-py3-none-any.whl 
 
+该安装包的下载地址为：
+
+https://docs.ihep.ac.cn/link/AAE6220451AA3943DF97E37E53DDA113F2
+
 安装该插件的命令为：
 
 * pip install jupyter_app_launcher-0.1.6-py3-none-any.whl 
