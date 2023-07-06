@@ -36,6 +36,10 @@ parts:
       sections:
       - file: start/devevweb
       - file: start/devevqt
+    - file: start/container
+      sections:
+      - file: start/image
+      - file: start/jupyterdev  
       
   - file: start/algorithmdev
     sections:
