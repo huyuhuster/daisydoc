@@ -85,13 +85,13 @@
     source ：本机资源文件，例如Notebook, voila的源文件，Url， local server的链接地址； \
     cwd : 弃用； \
     type : 应用的类型，只能是以下类型之一：  \
-  		   'notebook'，\
-  		   'notebook-grid'，\
-  		   'notebook-voila'，\
-  		   'markdown'，\
-  		   'local-server'，\
-  		   'url'， \
-  		   'webapp'; \
+  		   - 'notebook'，\
+  		   - 'notebook-grid'，\
+  		   - 'notebook-voila'，\
+  		   - 'markdown'，\
+  		   - 'local-server'，\
+  		   - 'url'， \
+  		   - 'webapp'; \
    args : 参数；\
    catalog ：应用的归类，同一类应用在launcher页面放在同一行；
 
