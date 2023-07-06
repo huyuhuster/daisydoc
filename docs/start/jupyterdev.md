@@ -1,6 +1,6 @@
 # jupyter 二次开发
 
-## Jupyterlab插件安装配置及其环境变量配置
+## 1. Jupyterlab插件安装配置及其环境变量配置
 
 本项目提供了插件jupyter_app_launcher的安装包：
 
@@ -18,9 +18,9 @@
 
 插件jupyter_app_launcher的配置文件位置为：
 
-* /opt/jupyter_app_launcher/config.yaml
+* <font color=#FF0000 >/opt/jupyter_app_launcher/config.yaml</font>  
 
-指向该地址的环境变量为==JUPYTER_APP_LAUNCHER_PATH #F44336==，用户使用以下命令使该环境变量生效：
+指向该地址的环境变量为 **JUPYTER_APP_LAUNCHER_PATH**，用户使用以下命令使该环境变量生效：
 
 * export JUPYTER_APP_LAUNCHER_PATH="/opt/jupyter_app_launcher" 
 
