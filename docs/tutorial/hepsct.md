@@ -16,7 +16,7 @@ HEPSCT 后端集成了HEPS X射线显微成像线站团队开发的MOCUPY，该�
 ## 软件访问方式
 
 ### 账号申请
-如果没有高能所统一认证账号，请先[申请统一认证账号](http://login.ihep.ac.cn/)， 并申请AFS集群账号，隶属应用请选择 "HEPS"，用户组请选择“HEPSBL”。
+如果没有高能所统一认证账号，请先[申请统一认证账号](http://login.ihep.ac.cn/)， 并申请AFS集群账号，隶属应用请选择 "HEPSBL"，用户组请选择“hepsbl”。
 
 ### 软件访问
 本软件以web页面的形式为用户提供服务，用户不需要下载和安装软件。在浏览器中输入访问地址： https://hepscompute.ihep.ac.cn ， 点击“Sign in with IHEPSSO”按钮，使用高能所统一认证账号登录。登录之后进入服务选择页面，选择 cumopy 项，点击页面最下方“start” 按钮，进入 Jupyterlab 界面。在 Jupyterlab 界面中的“IHEP Application” 栏目中点击 “HEPSCT” 图标即可进入 HEPSCT 界面。
