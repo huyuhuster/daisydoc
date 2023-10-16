@@ -8,6 +8,10 @@ parts:
     sections:
     - file: start/framework-core
 
+- caption: Download & Installation
+  chapters:
+  - file: reference/installation
+
 - caption: User Guides
   chapters:
   - file: tutorial/workbench
@@ -87,13 +91,6 @@ parts:
       - file: start/webinteract
       - file: start/webasyncwidgets
        
-     
-       
-
-- caption: Download & Installation
-  chapters:
-  - file: reference/download
-  - file: reference/installation
 
 - caption: Citing & contribution & Contact
   chapters:
