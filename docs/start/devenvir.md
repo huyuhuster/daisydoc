@@ -1,2 +1,2 @@
-# 开发环境
+# Development environment
 目前我们通过虚拟化 Docker 容器向用户提供软件开发环境。用户使用高能所统一认证账号通过 jupyterHub 进行用户认证之后进入到jupyterlab用户界面，进行相应的环境配置之后便可在Daisy框架中集成算法，开发领域方法学应用。
