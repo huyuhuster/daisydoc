@@ -1,5 +1,5 @@
 ---
-title: Daisy Documentation 
+title: Daisy project 
 ---
 
 ::::{grid} 2
