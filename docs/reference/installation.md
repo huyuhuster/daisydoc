@@ -57,7 +57,11 @@
 
 <img src="../images/astronomy/login.png" align=center />
 
+&nbsp;
+
 <img src="../images/astronomy/serviceselection.png" align=center />
+
+&nbsp;
 
 <img src="../images/astronomy/enterUI.png" align=center />
 
@@ -79,6 +83,8 @@
 本应用用户使用文档请访问 [](../tutorial/PDF.md)
 
 <img src="../images/xrdxs/hepscompute_main.png" align=center />
+
+&nbsp;
 
 <img src="../images/xrdxs/jupyterlab.png" align=center />
 
