@@ -86,8 +86,10 @@
 
 &nbsp;
 
-<img src="../images/xrdxs/jupyterlab.png" align=center width="50%" height="50%"/>
+<img src="../images/xrdxs/jupyterlab.png" align=center width="60%" height="60%"/>
 
 
+&nbsp;
+&nbsp;
 
 欢迎大家提**issues**和贡献**commits**！
