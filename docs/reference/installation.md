@@ -36,11 +36,15 @@
 
 本程序无需安装，下载之后解压即可直接使用。
 
+用户文档请访问 [](../tutorial/XASmatch.md)
+
 ### PCA&LCF程序
 
 点击下载： [软件包](https://docs.ihep.ac.cn/link/AAF9A02D2FDEF64AED9BB07E00D1414ED4)
 
 本程序无需安装，下载之后解压即可直接使用。
+
+用户文档请访问 [](../tutorial/XASpcalcf.md)
 
 ### HXMT web 数据分析平台
 
