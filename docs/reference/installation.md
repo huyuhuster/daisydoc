@@ -57,9 +57,9 @@
 
 <img src="../images/astronomy/login.png" align=center />
 
-<img src="../../images/astronomy/serviceselection.png" align=center />
+<img src="../images/astronomy/serviceselection.png" align=center />
 
-<img src="../../images/astronomy/enterUI.png" align=center />
+<img src="../images/astronomy/enterUI.png" align=center />
 
 
 
