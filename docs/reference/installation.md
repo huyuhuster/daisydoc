@@ -86,7 +86,7 @@
 
 &nbsp;
 
-<img src="../images/xrdxs/jupyterlab.png" align=center />
+<img src="../images/xrdxs/jupyterlab.png" align=center width="50%" height="50%"/>
 
 
 
