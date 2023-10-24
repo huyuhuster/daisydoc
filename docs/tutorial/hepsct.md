@@ -126,9 +126,9 @@ $$
 
 <img src="../images/imaging/HEPSCT_Result1.png" align=center />
 
-1) 点击2 Select 按钮导入重建断层数据；
+1) 点击 (编号2) Select 按钮导入重建断层数据；
 2) 点击下方列表查看重建结果
-3) 也可以点击3 Play 按钮，自动播放重建结果
+3) 也可以点击 (编号3) Play 按钮，自动播放重建结果
 
 # 纳米CT数据重建流程
 
@@ -138,25 +138,26 @@ $$
 
 <img src="../images/imaging/HEPSCT_LoadData_nano1.png" align=center />
 
-1) 点击Load Image切换至图像导入页面；
-2) 点击2 Load按钮导入投影数据；
-3) 检查起始角度（默认0°，编号3）和终止角度（默认180°，编号4）的数值是否与实验采集实际情况一致；若不一致，在3、4方框内中输入正确数值；
-4) 点击5 Load按钮，导入背景数据；
-5) 点击6 Load按钮，导入暗场数据；
+1) 点击 Projections Tab 切换至图像导入页面；
+2) 点击 (编号2) Change 按钮导入投影数据；
+4) 点击 (编号3) Change 按钮，导入背景数据；
+5) 点击 (编号4) Change 按钮，导入暗场数据；
 注：若实验过程中未采集背景或暗场数据，可不导入，直接跳过。
 
 
 ## 背景扣除（预处理）
 
-点击Preprocess Tab进入预处理页面（如下图所示）。
+点击 Preprocess Tab 进入预处理页面（如下图所示）。
 
-<img src="../images/imaging/HEPSCT_LoadData_nano1.png" align=center />
+<img src="../images/imaging/HEPSCT_Preprocess_nano1.png" align=center />
 
 1) 图像降噪算法选择（注：可根据实际情况选择算法，默认是None）；
 2) 背景扣除,具体计算公式如下：
+
 $$
 I_out = -log \frac{I_prj - I_dark}{I_bg - I_dark}
 $$
+
 （注：默认勾选，若没有背景数据导入，需要取消勾选）
 
 3) 去除图像中出现的负值，可选择是否勾选；
