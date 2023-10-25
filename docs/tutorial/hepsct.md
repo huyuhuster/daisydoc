@@ -27,8 +27,6 @@ HEPSCT 后端集成了HEPS X射线显微成像线站团队开发的MOCUPY，该�
 
 1. 启动WinSCP软件，一般会弹出登录界面，如果没有弹出可以点击左上方的“新建会话”。
 
-<img src="../images/imaging/wincp_login1.png" width="60%" align=center />
-
 2. 在登录窗口右上方填入登录信息：
 
    - 主机名：hepsui01.ihep.ac.cn
@@ -40,6 +38,10 @@ HEPSCT 后端集成了HEPS X射线显微成像线站团队开发的MOCUPY，该�
   
    - 在左侧是 windows 目录中找到需要处理的数据，使用鼠标将数据文件从数据存放目录拖拽到右侧 hepsfs 的目录中，即可完成数据的上传。
    - 在右侧是 hepsfs 盘上找到处理好数据，使用鼠标将数据文件从数据存放目录拖拽到左侧的 windows目录中，即可完成数据的下载。
+
+<img src="../images/imaging/wincp_login1.png" width="60%" align=center />
+
+&nbsp;
 
 <img src="../images/imaging/wincp_copy_data1.png" width="60%" align=center />
 
