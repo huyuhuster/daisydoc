@@ -18,8 +18,34 @@ HEPSCT 后端集成了HEPS X射线显微成像线站团队开发的MOCUPY，该�
 ### 账号申请
 如果没有高能所统一认证账号，请先[申请统一认证账号](http://login.ihep.ac.cn/)， 并申请AFS集群账号，隶属应用请选择 "HEPSBL"，用户组请选择“hepsbl”。
 
+### 数据的上传和下载
+本应用部署在计算中心交互式计算平台上，该平台挂载计算中心分布式文件存储系统。使用本应用处理数据需要首先将数据上传至计算中心分布式文件存储系统中。具体方法如下：
+
+以AFS集群账号 huy 为例，在申请了AFS账号，并选择“hepsbl”用户分组后，计算系统会在 /hepsfs/user/ 目录下自动为用户创建用户目录 /hepsfs/user/huy.用户在Windows 电脑上可以通过 WinSCP 软件进行数据的上传和下载。WinSCP软件下载地址 https://winscp.net/eng/download.php。
+
+数据上传的步骤为：
+
+1. 启动WinSCP软件，一般会弹出登录界面，如果没有弹出可以点击左上方的“新建会话”。
+2. 在登录窗口右上方填入登录信息：
+
+   - 主机名：hepsui01.ihep.ac.cn
+   - 用户名： bsrf4w1a
+   - 密   码： ********** 
+
+3. 点击右下方点击“登录”按钮登录。
+
+:::{admonition} 
+:class: tip
+可以保存当前会话，避免重复输入登录信息
+:::
+
+4. 登录成功后，进入工作界面：左侧是windows目录，右侧是hepsfs盘上用户的数据存放目录。
+   - 在左侧是windows目录中找到需要处理的数据，使用鼠标将数据文件从数据存放目录拖拽到右侧hepsfs的目录中，即可完成数据的上传。
+   - 在右侧是hepsfs盘上找到处理好数据，使用鼠标将数据文件从数据存放目录拖拽到左侧的windows目录中，即可完成数据的下载。
+
+
 ### 软件访问
-本软件以web页面的形式为用户提供服务，用户不需要下载和安装软件。在浏览器中输入访问地址： https://hepscompute.ihep.ac.cn ， 点击“Sign in with IHEPSSO”按钮，使用高能所统一认证账号登录。登录之后进入服务选择页面，选择 cumopy 项，点击页面最下方“start” 按钮，进入 Jupyterlab 界面。在 Jupyterlab 界面中的“IHEP Application” 栏目中点击 “HEPSCT” 图标即可进入 HEPSCT 界面。
+本软件以web页面的形式为用户提供服务，用户不需要下载和安装软件。在浏览器中输入访问地址： https://hepscompute.ihep.ac.cn， 点击“Sign in with IHEPSSO”按钮，使用高能所统一认证账号登录。登录之后进入服务选择页面，选择 cumopy 项，点击页面最下方“start” 按钮，进入 Jupyterlab 界面。在 Jupyterlab 界面中的“IHEP Application” 栏目中点击 “HEPSCT” 图标即可进入 HEPSCT 界面。
 
 <img src="../images/imaging/login.png" align=center />
 
