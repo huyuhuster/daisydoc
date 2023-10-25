@@ -34,7 +34,7 @@ HEPSCT 后端集成了HEPS X射线显微成像线站团队开发的MOCUPY，该�
 
 3. 点击右下方点击“登录”按钮登录。
 
-:::{admonition} 
+:::{admonition} Tip
 :class: tip
 可以保存当前会话，避免重复输入登录信息
 :::
