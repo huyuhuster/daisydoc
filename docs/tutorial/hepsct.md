@@ -23,7 +23,7 @@ HEPSCT 后端集成了HEPS X射线显微成像线站团队开发的MOCUPY，该�
 
 以AFS集群账号 huy 为例，在申请了AFS账号，并选择“hepsbl”用户分组后，计算系统会在 /hepsfs/user/ 目录下自动为用户创建用户目录 /hepsfs/user/huy.用户在Windows 电脑上可以通过 WinSCP 软件进行数据的上传和下载。WinSCP软件下载地址 https://winscp.net/eng/download.php。
 
-数据上传的步骤为：
+数据上传和下载的步骤为：
 
 1. 启动WinSCP软件，一般会弹出登录界面，如果没有弹出可以点击左上方的“新建会话”。
 
