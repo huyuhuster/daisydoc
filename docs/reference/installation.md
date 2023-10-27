@@ -1,6 +1,6 @@
 # Download and Installation
 
-## Daisy 
+## Daisy
 
 &nbsp;
 
@@ -21,9 +21,13 @@
    wget https://code.ihep.ac.cn/hepscc/Daisy/-/archive/main/Daisy-main.tar.gz
    ```
 
+2. 软件依赖
+   - `Python`，建议版本**3.10**，至少**3.8**；推荐使用`conda`安装；
+   - `boost`，这是一个独立的C++软件库，需要独立安装编译，建议查看[官方文档](https://www.boost.org/doc/libs/1_83_0/more/getting_started/unix-variants.html)安装，版本**1.80**及以上。
+
 2. 进入代码所在根目录（压缩包请先解压缩），执行：
    ```bash
-   . ./setup.sh
+   source ./setup.sh
    ```
 
 `Daisy` 将自动完成编译、安装和设置好相应的环境变量，之后每次使用 `Daisy`，都可以执行此脚本；并且脚本经过优化，不会发生重复编译。
@@ -72,7 +76,7 @@
 
 
 
-### HEPSCT 
+### HEPSCT
 
 本软件为 `web` 应用，请访问交互式计算平台，在浏览器地址栏输入 https://hepscompute.ihep.ac.cn ， 点击 `Sign in with IHEPSSO` 按钮，使用高能所统一认证账号登录。登录之后进入服务选择页面，选择 `cumopy` 项，点击页面最上方 `启动已选择的分析环境` 按钮，进入 `Jupyterlab` 界面。在 `Jupyterlab` 界面中的`IHEP Application` 栏目中点击 `HEPSCT` 图标即可进入 HEPSCT 界面。
 
