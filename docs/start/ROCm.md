@@ -20,11 +20,15 @@ CUDA 和 ROCm 生态中的已有加速器应用部署在 DCU 上。目前，最�
 
 1） 首先加载 DTK 目录下的 env.sh，用于设置 DTK 环境变量。
 
+```
 source env.sh
+```
 
 2） 接着加载 DTK 中 cuda 目录下的 env.sh，用于设置 CUDA 环境变量。
 
+```
 source $ROCM_PATH/cuda/env.sh
+```
 
 加载上述环境后，可以直接在 DCU 上构建安装支持 CUDA 加速的应用（使用 CUDA
 构建的方法）。当然，CUDA 的部分功能目前 DTK 还不支持，需要进行修改。
@@ -37,7 +41,9 @@ DTK 提供的 CUDA API 分为以下三类：
 
 2） 未严格转换的 API：这一类 API 的行为和 CUDA 原版不完全一致，但不影响系统的正常执行。一般情况下不会影响程序的正确性。在默认情况下，编译期间会提示：
 
+```
 warning:This API is not support currently. This may result in inaccurate results.
+```
 
 用户通过将环境变量 CUDA_STRICT 设为 1 来禁用未严格转换的 API，这种情况
 下，未严格转换的 API 会报错处理，终止编译。
@@ -67,8 +73,9 @@ enable_language(CUDA)特性在 CMake 3.16.2 到 CMake 3.24.2 范围的版本做�
 
 DTK CUDA 支持 CUDA 的核函数调用语法：
 
+```
 kernel<<<gridSize, blockSize, shardMemorySize, Stream>>>(Args)。
-
+```
 
 ## 2 适配流程
 
@@ -91,14 +98,18 @@ DTK CUDA 支持 find_package(CUDA)和 enable_language(CUDA)的 CMake 特性。�
 在程序编译过程中如果出现错误，建议先使用单线程输出详细信息，以输出真正错误处
 的构建指令，方便问题分析。指令如下:
 
+```
 make VERBOSE=1
+```
 
 ###2.3 程序运行
 
 DTK 为了程序最高的效率，默认线程的最大值为 256，在程序运行中如果出现以下提
 示，则需要调整最大值的大小。
 
+```
 Launch params (1024, 1, 1) are larger than launch bounds (256) for kernel
+```
 
 可以在编译命令中添加“--gpu-max-threads-per-block=1024”后重新编译，或者在核函数头
 部添加“__launch_bounds__(1024)”。
@@ -115,10 +126,12 @@ warp size 为 32，DTK 软件栈适用的 warp size 为 64。用户需要确保�
 ### 3.1 tomocupy
 
 1）g++编译 cu 代码无法识别 clang 内置的_Float16，需改用 nvcc 进行编译；
+
 2）hipfft 暂不支持半精度计算，关闭 half 精度选项，所有计算皆基于单精度；
+
 3）对应的.cu 文件中加入 cstring 头文件解决缺少 memset 函数问题。
-4）cufftXtMakePlanMany 和 cufftXtExec 暂未实现，分别用 cufftMakePlanMany
-、cufftExecR2C 进行改写替换。
+
+4）cufftXtMakePlanMany 和 cufftXtExec 暂未实现，分别用 cufftMakePlanMany、cufftExecR2C 进行改写替换。
 
 ### 3.2 astra
 
