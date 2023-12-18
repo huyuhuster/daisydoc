@@ -44,6 +44,9 @@ parts:
       sections:
       - file: start/image
       - file: start/jupyterdev  
+    - file: start/hardware
+      sections:
+      - file: start/ROCm.md
       
   - file: start/algorithmdev
     sections:
