@@ -1,4 +1,4 @@
-# ROCm 生态 适配
+# ROCm 生态适配
 
 ## 1 基础简介
 DTK（DCU Toolkit）是 DCU 硬件平台开发工具包。借助 DTK 开发人员可以在 DCU 上
