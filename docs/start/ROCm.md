@@ -6,6 +6,8 @@ DTK（DCU Toolkit）是 DCU 硬件平台开发工具包。借助 DTK 开发人�
 CUDA 和 ROCm 生态中的已有加速器应用部署在 DCU 上。目前，最新 DTK 已经支持多种
 计算框架，包括基础数学算子、科学计算、深度学习等众多领域。
 
+<img src="../images/rocm/DTK.jpg"  align=center />
+
 ### 1.1 DTK CUDA 使用方法
 
 如上文所述，DTK 支持 CUDA 生态。以 dtk 23.04 为例，其兼容的 CUDA 版本为 10.2.86。
@@ -124,18 +126,25 @@ warp size 为 32，DTK 软件栈适用的 warp size 为 64。用户需要确保�
 
 第一种错误如图所示，解决方法是在对应的.cu 文件中加入 cstring 头文件。
 
+<img src="../images/rocm/memseterror.jpg"  align=center />
+
 第二种错误是 Makefile 对于 target 构建规则的单、双冒号冲突，具体表现如下图所示。
+
 目 前 解决方 法 是 将预处 理 后 生成的 中 间 文 件 （依赖文 件 ） 进 行 修 改 ， 进入 astra-toolbox/build/linux/cuda/2d/.deps/和 astra-toolbox/build/linux/cuda/3d/.deps/，将目录下的.d 文件
 中的“::”修改为“:”。
+
+<img src="../images/rocm/relyfile1.jpg"  align=center />
+
+<img src="../images/rocm/relyfile2.jpg"  align=center />
 
 测试中发现 2d 和 3d 计算结果有误。
 
 排查后发现 2d 中的错误是由于数据拷贝过程（Host to Device）存在问题，cudaMemcpy2D
-中输入输出的 size 不同，导致设备端上存在大量无效数据。将 size 统一为 input 的 size 即
-可。
+中输入输出的 size 不同，导致设备端上存在大量无效数据。将 size 统一为 input 的 size 即可。
 
-3d 计算的问题与 2d 相似，但由于 cudaMemcpy3D 函数比较特殊，需要添加如图红框中
-所示代码：
+3d 计算的问题与 2d 相似，但由于 cudaMemcpy3D 函数比较特殊，需要添加如图红框中所示代码：
+
+<img src="../images/rocm/astramodified.jpg"  align=center />
 
 ### 3.3 ufo
 
