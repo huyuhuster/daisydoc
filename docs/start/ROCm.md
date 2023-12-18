@@ -110,7 +110,7 @@ Launch params (1024, 1, 1) are larger than launch bounds (256) for kernel
 warp size 为 32，DTK 软件栈适用的 warp size 为 64。用户需要确保项目中所有的 warp size
 修改为 64，以保证程序的正确性。
 
-## 3 本次适配工作中的问题
+## 3 适配工作中的问题举例
 
 ### 3.1 tomocupy
 
