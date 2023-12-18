@@ -1,6 +1,8 @@
 # Download and Installation
 
-## Daisy
+本页面描述了Daisy软件框架以及基于Daisy软件框架开发的科学应用软件的下载、安装和使用的方法。
+
+## 一、Daisy
 
 &nbsp;
 
@@ -36,7 +38,7 @@
 
 &nbsp;
 
-## Scientific application
+## 二、 Scientific application
 
 &nbsp;
 
