@@ -24,8 +24,27 @@
    ```
 
 2. 软件依赖
-   - `Python`，建议版本**3.10**，至少**3.8**；推荐使用`conda`安装；
-   - `boost`，这是一个独立的C++软件库，需要独立安装编译，建议查看[官方文档](https://www.boost.org/doc/libs/1_83_0/more/getting_started/unix-variants.html)安装，版本**1.80**及以上。
+   1. `C++`编译器，建议**gcc**或**clang**。以**gcc**为例，至少**11.2**版本以上；
+      - 可以使用CvmFS上已安装版本 `/cvmfs/heps.ihep.ac.cn/software/gcc-11.2.1` ；
+   2. `Python`，建议版本**3.11**，至少**3.8**；推荐使用`conda`安装；
+   3. `boost`，这是一个独立的C++软件库，需要独立安装编译，建议查看[官方文档](https://www.boost.org/doc/libs/1_84_0/more/getting_started/unix-variants.html)安装，版本**1.84**及以上。
+
+      编译示例如下：假设 Python 3.11 安装在/opt/conda下，boost拟安装在/usr/local下
+      1. source gcc和启用Python环境
+      2. 下载boost源码
+      ```bash
+      wget https://sourceforge.net/projects/boost/files/boost/1.84.0/boost_1_84_0.tar.bz2/download -O /opt/boost_1_84_0.tar.bz2
+      tar -xf boost_1_84_0.tar.bz2 && cd /opt/boost_1_84_0
+      ```
+      3. 编译和安装
+      ```bash
+      ./bootstrap.sh --prefix=/usr/local/boost --with-python=/opt/conda/bin/python3.11
+      ./b2
+      ./b2 install variant=release debug-symbols=off \
+           cflags="${CPPFLAGS} ${CFLAGS} -fPIC -O3 -ffat-lto-objects" \
+           cxxflags="${CPPFLAGS} ${CXXFLAGS} -fPIC -O3 -ffat-lto-objects" \
+           --layout=system --with-python include='/opt/conda/include/python3.11'
+      ```
 
 3. 进入代码所在根目录（压缩包请先解压缩），执行：
    ```bash
