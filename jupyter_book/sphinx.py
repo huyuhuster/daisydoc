@@ -127,10 +127,6 @@ def build_sphinx(
                 parallel=jobs,
                 keep_going=keep_going,
             )
-            app.srcdir = Path(app.srcdir).as_posix()
-            app.outdir = Path(app.outdir).as_posix()
-            app.confdir = Path(app.confdir).as_posix()
-            app.doctreedir = Path(app.doctreedir).as_posix()
 
             # We have to apply this update after the sphinx initialisation,
             # since default_latex_documents is dynamically generated
@@ -153,7 +149,7 @@ def build_sphinx(
                     site_map = app.config.external_site_map
                     site_map_str = yaml.dump(site_map.as_json())
 
-                    # only if there is atleast one numbered: true in the toc file
+                    # only if there is at least one numbered: true in the toc file
                     if "numbered: true" in site_map_str:
                         app.setup_extension("sphinx_multitoc_numbering")
                 else:

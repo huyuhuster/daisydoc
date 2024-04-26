@@ -50,11 +50,24 @@
         "execute": {
             "type": "object",
             "properties": {
+                "eval_regex": {
+                    "type": "string",
+                    "default": "^.*$"
+                },
+                "raise_on_error": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "show_tb": {
+                    "type": "boolean",
+                    "default": false
+                },
                 "execute_notebooks": {
                     "enum": [
                         "auto",
                         "cache",
                         "force",
+                        "inline",
                         "off",
                         false
                     ],
@@ -111,14 +124,13 @@
                 "use_issues_button": {
                     "type": "boolean"
                 },
-                "extra_navbar": {
-                    "type": "string"
-                },
                 "extra_footer": {
                     "type": "string"
                 },
-                "google_analytics_id": {
-                    "type": "string"
+                "analytics": {
+                    "google_analytics_id": {
+                        "type": "string"
+                    }
                 },
                 "home_page_in_navbar": {
                     "type": "boolean"
