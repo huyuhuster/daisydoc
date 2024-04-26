@@ -1,26 +1,5 @@
 # Pair Distribution Functions (PDF) pipeline
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
-
-- [Pair Distribution Functions (PDF) pipeline](#pair-distribution-functions-pdf-pipeline)
-    - [简介](#简介)
-        - [版本](#版本)
-        - [技术路线](#技术路线)
-        - [数据处理流程](#数据处理流程)
-    - [界面入口](#界面入口)
-        - [网站页面](#网站页面)
-        - [Jupyterlab Launcher页面](#jupyterlab-launcher页面)
-    - [主界面基本布局](#主界面基本布局)
-    - [分界面功能介绍](#分界面功能介绍)
-        - [pipeline（进入后的默认tab）](#pipeline进入后的默认tab)
-        - [integarte 积分](#integarte-积分)
-        - [transform 获取PDF](#transform-获取pdf)
-    - [后续开发计划](#后续开发计划)
-        - [界面层面](#界面层面)
-        - [功能层面](#功能层面)
-
-<!-- markdown-toc end -->
 
 ## 简介
 此项目是面向先进光源 [HEPS](https://heps.ihep.ac.cn "High Energy Photon Source") 的数据处理软件框架 [`Daisy`](https://code.ihep.ac.cn/hepscc/daisy) 的学科应用示范之一，主要服务于**B1**、**B3**、**B6**、**B9**等线站，项目主页位于 [Daisy-PDF](https://code.ihep.ac.cn/sunhk/PDFgui.git)。
@@ -130,13 +109,13 @@
 
 ### integarte 积分
 
-积分部分，仅包括衍射数据文件的批量积分功能，详细的使用说明已经包含在 [`pipeline`](#pipeline进入后的默认tab) 一节中。
+积分部分，仅包括衍射数据文件的批量积分功能，详细的使用说明已经包含在 pipeline 一节中。
 
 ![integ](../images/xrdxs/integ.png)
 
 ### transform 获取PDF
 
-获取 *PDF* 部分，仅包括将积分后的文件（.chi）计算得到相应的 *PDF* 文件，目前支持4种输出类型 `[gr, iq, fq, sq]`，详细的使用说明已经包含在 [`pipeline`](#pipeline进入后的默认tab) 一节中。
+获取 *PDF* 部分，仅包括将积分后的文件（.chi）计算得到相应的 *PDF* 文件，目前支持4种输出类型 `[gr, iq, fq, sq]`，详细的使用说明已经包含在 pipeline 一节中。
 
 ![trans](../images/xrdxs/trans.png)
 
