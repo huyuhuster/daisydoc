@@ -119,7 +119,7 @@ sphinx:
         - jupytext.reads
         - fmt: Rmd
     rediraffe_branch: 'master'
-    rediraffe_redirects:
+    #rediraffe_redirects:
       # content-types/index.md: file-types/index.md
       # content-types/markdown.md: file-types/markdown.md
       # content-types/notebooks.ipynb: file-types/notebooks.ipynb
