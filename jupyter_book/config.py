@@ -5,11 +5,15 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Optional, Union
 
+import docutils
 import jsonschema
 import sphinx
 import yaml
+from sphinx.util import logging
 
 from .utils import _message_box
+
+logger = logging.getLogger(__name__)
 
 # Transform a "Jupyter Book" YAML configuration file into a Sphinx configuration file.
 # This is so that we can choose more user-friendly words for things than Sphinx uses.
@@ -32,7 +36,6 @@ def get_default_sphinx_config():
             "sphinx_external_toc",
             "sphinx.ext.intersphinx",
             "sphinx_design",
-            "sphinx_book_theme",
         ],
         pygments_style="sphinx",
         html_theme="sphinx_book_theme",
@@ -137,15 +140,14 @@ def get_final_config(
     _recursive_update(sphinx_config, yaml_config)
 
     # TODO: deprecate this in version 0.14
-    # Check user specified mathjax_config for sphinx >= 4
     # https://github.com/executablebooks/jupyter-book/issues/1502
-    if sphinx.version_info[0] >= 4 and "mathjax_config" in user_yaml_update:
+    if "mathjax_config" in user_yaml_update:
         # Switch off warning if user has specified mathjax v2
         if (
             "mathjax_path" in user_yaml_update
             and "@2" in user_yaml_update["mathjax_path"]
         ):
-            # use mathjax2_config so not to tigger deprecation warning in future
+            # use mathjax2_config so not to trigger deprecation warning in future
             user_yaml_update["mathjax2_config"] = user_yaml_update.pop("mathjax_config")
         else:
             _message_box(
@@ -181,6 +183,10 @@ def get_final_config(
 
     if sphinx_config.get("use_jupyterbook_latex"):
         sphinx_config["extensions"].append("sphinx_jupyterbook_latex")
+
+    # Add sphinx_multitoc_numbering extension if necessary
+    if sphinx_config.get("use_multitoc_numbering"):
+        sphinx_config["extensions"].append("sphinx_multitoc_numbering")
 
     # finally merge in CLI configuration
     _recursive_update(sphinx_config, cli_config or {})
@@ -272,7 +278,6 @@ def yaml_to_sphinx(yaml: dict):
     # HTML
     html = yaml.get("html")
     if html:
-
         for spx_key, yml_key in [
             ("html_favicon", "favicon"),
             ("html_baseurl", "baseurl"),
@@ -283,9 +288,7 @@ def yaml_to_sphinx(yaml: dict):
                 sphinx_config[spx_key] = html[yml_key]
 
         for spx_key, yml_key in [
-            ("google_analytics_id", "google_analytics_id"),
             ("navbar_footer_text", "navbar_footer_text"),
-            ("extra_navbar", "extra_navbar"),
             # Deprecate navbar_footer_text after a release cycle
             ("extra_footer", "extra_footer"),
             ("home_page_in_toc", "home_page_in_navbar"),
@@ -294,6 +297,10 @@ def yaml_to_sphinx(yaml: dict):
             if yml_key in html:
                 theme_options[spx_key] = html[yml_key]
 
+        for spx_key, yml_key in [("google_analytics_id", "google_analytics_id")]:
+            if yml_key in html:
+                theme_options["analytics"] = {}
+                theme_options["analytics"][spx_key] = html[yml_key]
         # Pass through the buttons
         btns = ["use_repository_button", "use_edit_page_button", "use_issues_button"]
         use_buttons = {btn: html.get(btn) for btn in btns if btn in html}
@@ -344,20 +351,23 @@ def yaml_to_sphinx(yaml: dict):
     execute = yaml.get("execute")
     if execute:
         for spx_key, yml_key in [
-            ("execution_allow_errors", "allow_errors"),
-            ("execution_in_temp", "run_in_temp"),
+            ("nb_execution_allow_errors", "allow_errors"),
+            ("nb_execution_raise_on_error", "raise_on_error"),
+            ("nb_eval_name_regex", "eval_regex"),
+            ("nb_execution_show_tb", "show_tb"),
+            ("nb_execution_in_temp", "run_in_temp"),
             ("nb_output_stderr", "stderr_output"),
-            ("execution_timeout", "timeout"),
-            ("jupyter_cache", "cache"),
-            ("jupyter_execute_notebooks", "execute_notebooks"),
-            ("execution_excludepatterns", "exclude_patterns"),
+            ("nb_execution_timeout", "timeout"),
+            ("nb_execution_cache_path", "cache"),
+            ("nb_execution_mode", "execute_notebooks"),
+            ("nb_execution_excludepatterns", "exclude_patterns"),
         ]:
             if yml_key in execute:
                 sphinx_config[spx_key] = execute[yml_key]
 
-        if sphinx_config.get("jupyter_execute_notebooks") is False:
+        if sphinx_config.get("nb_execution_mode") is False:
             # Special case because YAML treats `off` as "False".
-            sphinx_config["jupyter_execute_notebooks"] = "off"
+            sphinx_config["nb_execution_mode"] = "off"
 
     # LaTeX
     latex = yaml.get("latex")
@@ -407,11 +417,24 @@ def yaml_to_sphinx(yaml: dict):
 
     # Citations
     sphinxcontrib_bibtex_configs = ["bibtex_bibfiles", "bibtex_reference_style"]
-    if any(ii in yaml for ii in sphinxcontrib_bibtex_configs):
+    if any(bibtex_config in yaml for bibtex_config in sphinxcontrib_bibtex_configs):
         # Load sphincontrib-bibtex
         if "extensions" not in sphinx_config:
             sphinx_config["extensions"] = get_default_sphinx_config()["extensions"]
         sphinx_config["extensions"].append("sphinxcontrib.bibtex")
+
+        # Report Bug in Specific Docutils Versions
+        # TODO: Remove when docutils>=0.20 is pinned in jupyter-book
+        # https://github.com/mcmtroffaes/sphinxcontrib-bibtex/issues/322
+        if (0, 18) <= docutils.__version_info__ < (0, 20):
+            logger.warning(
+                "[sphinxcontrib-bibtex] Beware that docutils versions 0.18 and 0.19 "
+                "(you are running {}) are known to generate invalid html for citations. "
+                "If this issue affects you, please use docutils<0.18 or >=0.20 instead. "
+                "For more details, see https://sourceforge.net/p/docutils/patches/195/".format(
+                    docutils.__version__
+                )
+            )
 
         # Pass through configuration
         if yaml.get("bibtex_bibfiles"):
