@@ -6,7 +6,7 @@
 
 &nbsp;
 
-### Daisy framework
+### 1. Daisy framework
 
 目前，`Daisy` 暂时仅提供源码编译安装的方式，面向 `Linux` 平台。
 
@@ -57,7 +57,7 @@
 更新 `Daisy` 项目时，请保存好自己的工作内容，重新执行上述两步过程即可。
 
 
-### Daisy workbench
+### 2. Daisy workbench
 
 &nbsp;
 
