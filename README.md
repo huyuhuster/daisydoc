@@ -1,87 +1,41 @@
-# Daisy Documentation
-This documentation is build by Jupyter Book. 
+# <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/master/docs/images/logo-square.svg" width=40 /> Jupyter Book
 
-### Build the book’s HTML
-The book's content is put in book folder and the book's structure is defined in `_toc.yml`.
+[![Jupyter Book Badge](docs/images/badge.svg)](https://jupyterbook.org)
+[![CircleCI](https://circleci.com/gh/executablebooks/jupyter-book.svg?style=svg)](https://circleci.com/gh/executablebooks/jupyter-book)
+[![codecov](https://codecov.io/gh/executablebooks/jupyter-book/branch/master/graph/badge.svg)](https://codecov.io/gh/executablebooks/jupyter-book)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.5281/zenodo.2561065)
+[![PyPI][pypi-badge]][pypi-link]
+[![Conda][conda-badge]][conda-link]
 
-By running the following command can build the HTML for the book.:
+Jupyter Book is an open-source tool for building publication-quality books and documents from computational material.
 
-```bash
-jupyter-book build mybookname/
-```
+Jupyter Book allows users to
 
-This will generate a fully-functioning HTML site using a **static site generator**.
-The site will be placed in the `_build/html` folder, something like this:
+* write their content in [markdown files](https://myst-parser.readthedocs.io/en/latest/) or [Jupyter](https://jupyter.org/) notebooks,
+* include computational elements (e.g., code cells) in either type,
+* include rich syntax such as citations, cross-references, and numbered equations, and
+* using a simple command, run the embedded code cells, [cache](https://jupyter-cache.readthedocs.io/en/latest/) the outputs and convert this content into:
+    * a web-based interactive book and
+    * a publication-quality PDF.
 
-```bash
-mybookname
- └──_build
-    └── html
-       ├── _images
-       ├── _static
-       ├── index.html
-       ├── intro.html
-       ...
-```
+## Governance of this project
 
-These are the static files for a standalone website!
-They contain the HTML and all assets needed to view your book in a browser.
+Jupyter Book is still developing relatively rapidly, so please be patient if things change
+or features iterate and change quickly. Once Jupyter Book hits 1.0, it will slow down
+considerably!
 
-You can open the pages in the site by navigating to that folder and opening the `html` files with your web browser.
+## Contribute or improve the book
 
-:::{note}
-You can also use the short-hand `jb` for `jupyter-book`. E.g.,:
-`jb build mybookname/`.
-:::
+Notice some inefficient CSS? A typo in the text? Want to add a cool feature so that others
+can enjoy the improvements to Jupyter Books? Check out the [Jupyter Book Contributor's
+Guide](https://jupyterbook.org/contribute/intro.html). We'd love your help!
 
+## Acknowledgements
 
-## Publish the book online with GitHub Pages
+Jupyter Book is maintained and primarily developed by
+the [Executable Book Project](https://executablebooks.org).
 
-We have just pushed the *source files* for our book into our GitHub repository.
-This makes it publicly accessible for you or others to see.
-
-Next, we'll publish the *build artifact* of our book online, so that it is rendered as a website.
-
-
-The easiest way to use GitHub Pages with your built HTML is to use the [`ghp-import`](https://github.com/davisp/ghp-import) package. `ghp-import` is a lightweight Python package that makes it easy to push HTML content to a GitHub repository.
-
-`ghp-import` works by copying *all* of the contents of your built book (i.e., the `_build/html` folder) to a branch of your repository called `gh-pages`, and pushes it to GitHub. The `gh-pages` branch will be created and populated automatically for you by `ghp-import`. To use `ghp-import` to host your book online with GitHub Pages follow the steps below:
-
-```{note}
-Before performing the below steps, ensure that HTML has been built for each page of your book
-(see {doc}`the previous section <../start/build>`). There should be a collection of HTML
-files in your book's `_build/html` folder.
-```
-
-1. Install `ghp-import`
-
-   ```bash
-   pip install ghp-import
-   ```
-2. Update the settings for your GitHub pages site:
-
-    a. Use the `gh-pages` branch to host your website.
-
-    b. Choose root directory `/` if you're building the book in it's own repository.
-       Choose `/docs` directory if you're building documentation with jupyter-book.
-
-3. From the `main` branch of your book's root directory (which should contain the `_build/html` folder) call `ghp-import` and point it to your HTML files, like so:
-
-   ```bash
-   ghp-import -n -p -f _build/html
-   ```
-
-```{warning}
-Make sure that you included the `-n` - this tells GitHub *not* to build your book with
-[Jekyll](https://jekyllrb.com/), which we don't want because our HTML is already built!
-If you do not do this you may see **404 not found** for your deployed content.
-```
-
-Typically after a few minutes your site should be viewable online at a url such as: `https://<user>.github.io/<myonlinebook>/`. If not, check your repository settings under **Options** -> **GitHub Pages** to ensure that the `gh-pages` branch is configured as the build source for GitHub Pages and/or to find the url address GitHub is building for you.
-
-To update your online book, make changes to your book's content on the `main` branch of your repository, re-build your book with `jupyter-book build mybookname/` and then use `ghp-import -n -p -f mylocalbook/_build/html` as before to push the newly built HTML to the `gh-pages` branch.
-
-```{warning}
-Note this warning from the [`ghp-import` GitHub repository](https://github.com/davisp/ghp-import):
-"...*`ghp-import` will DESTROY your gh-pages branch... and assumes that the `gh-pages` branch is 100% derivative. You should never edit files in your `gh-pages` branch by hand if you're using this script...*"
-```
+[pypi-badge]: https://img.shields.io/pypi/v/jupyter-book.svg
+[pypi-link]: https://pypi.org/project/jupyter-book
+[conda-badge]: https://anaconda.org/conda-forge/jupyter-book/badges/version.svg
+[conda-link]: https://anaconda.org/conda-forge/jupyter-book

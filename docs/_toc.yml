@@ -1,105 +1,101 @@
 format: jb-book
 root: intro
 parts:
-- caption: Overview
+- caption: Tutorials
   chapters:
   - file: start/your-first-book
-  - file: start/overview
     sections:
-    - file: start/framework-core
+    - file: start/overview
+    - file: start/create
+    - file: start/build
+    - file: start/new-file
+    - file: start/publish
+    - file: start/example-book
+  - file: tutorials/references
 
-- caption: Download & Installation
+- caption: Topic Guides
   chapters:
-  - file: reference/installation
+  - file: basics/organize
+    sections:
+    - file: structure/toc
+    - file: structure/configure
+    - file: file-types/index
+      sections:
+      - file: file-types/markdown
+      - file: file-types/notebooks
+      - file: file-types/myst-notebooks
+      - file: file-types/jupytext
+      - file: file-types/restructuredtext
+    - file: basics/create
+    - file: structure/sections-headers
 
-- caption: User Guides
-  chapters:
-  - file: tutorial/workbench
-  - file: tutorial/interface
+  - file: content/index
     sections:
-    - file: tutorial/imaging
-      sections:
-      - file: tutorial/hepsct
-    - file: tutorial/spectroscopy
-      sections:
-      - file: tutorial/XASmatch
-      - file: tutorial/XASpcalcf
-    - file: tutorial/XRDSAXS
-      sections:
-      - file: tutorial/PDF
-    - file: tutorial/astronomy
-      sections:
-      - file: tutorial/astronomy/hxmt
+    - file: content/myst
+    - file: content/content-blocks
+    - file: content/components
+    - file: content/references
+    - file: content/layout
+    - file: content/citations
+    - file: content/math
+    - file: content/proof
+    - file: content/figures
+    - file: content/metadata
 
-- caption: Development
-  chapters:
-  - file: start/devenvir
+  - file: content/executable/index
     sections:
-    - file: start/devaccount
-    - file: start/devev
-      sections:
-      - file: start/devevweb
-      - file: start/devevqt
-    - file: start/container
-      sections:
-      - file: start/image
-      - file: start/jupyterdev  
-    - file: start/hardware
-      sections:
-      - file: start/ROCm.md
-      
-  - file: start/algorithmdev
-    sections:
-    - file: start/algorithmdevcpp
-    - file: start/algorithmdevpython
-    
-  - file: start/workflowdev
-    sections:
-    - file: start/workflowdevpython
-   
-  - file: start/interfacedev
-    sections:
-    - file: start/mvcmode
-    - file: start/interfaceqt
-      sections:
-      - file: start/qtbutton
-      - file: start/qtlabel
-      - file: start/qtlayouts
-      - file: start/qtlineedit
-      - file: start/qtcombobox
-      - file: start/qtspinbox
-      - file: start/qttable
-      - file: start/qtview
-      - file: start/qtviewsigre
-      - file: start/qtviewsigex
-      - file: start/qtcontroller
-      - file: start/qtcontrollervir
-      - file: start/qtcontrollermock
-      - file: start/qtmodelsimple
-      - file: start/qtmodelexample
-      - file: start/qtmatplotlibmvc
-      - file: start/qtmultiview
-      - file: start/workbenchinterface
-        sections:
-        - file: start/workbenchinterfacedev
-        - file: start/workbenchinterfaceplug
-   
-         
-    - file: start/interfaceweb
-      sections:
-      - file: start/webwidgetsintro
-      - file: start/webwidgetsusual
-      - file: start/webwidgetsevent
-      - file: start/weblayout
-      - file: start/webinteract
-      - file: start/webasyncwidgets
-       
+    - file: content/execute
+    - file: content/code-outputs
+    - file: content/executable/output-insert
+    - file: interactive/interactive
 
-- caption: Citing & contribution & Contact
-  chapters:
-  - file: customize/citing
-  - file: customize/contribution
+  - file: basics/building/index
     sections:
-    - file: customize/developerAccount
-    - file: customize/gitWorkflow
-  - file: customize/contact
+    - file: basics/build
+    - file: publish/web
+      sections:
+      - file: publish/gh-pages
+      - file: publish/netlify
+      - file: publish/readthedocs
+    - file: advanced/pdf
+
+  - file: web/index
+    sections:
+    - file: basics/repository
+    - file: interactive/hiding
+    - file: interactive/launchbuttons
+    - file: interactive/thebe
+    - file: interactive/comments
+      sections:
+      - file: interactive/comments/hypothesis
+      - file: interactive/comments/utterances
+    - file: web/announcements
+    - file: advanced/html
+
+  - file: sphinx/index
+    sections:
+    - file: advanced/sphinx
+    - file: advanced/developers
+    - file: explain/sphinx
+
+  - file: advanced/index
+    sections:
+    - file: advanced/windows
+  - file: contribute/intro
+
+- caption: Reference
+  chapters:
+  - file: customize/config
+  - file: reference/cheatsheet
+  - file: reference/cli
+  - file: reference/glossary
+
+- caption: About Jupyter Book
+  chapters:
+  - url: https://executablebooks.org/en/latest/gallery
+    title: Gallery of Jupyter Books
+  - file: explain/components
+  - file: cite
+  - file: explain/migration
+  - file: reference/_changelog
+    title: Change log

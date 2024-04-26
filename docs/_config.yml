@@ -1,9 +1,9 @@
 #######################################################################################
 # Book settings
-title: "Daisy project"
-logo: images/logo-wide.png
-author: The Daisy group
-email: huyu@ihep.ac.cn
+title: ""
+logo: images/logo-wide.svg
+author: The Jupyter Book Community
+email: choldgraf@berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is an example book built with Jupyter Books.
 
@@ -25,18 +25,18 @@ html:
   # Then we could link to the changelog in the *same* build of the docs.
   announcement: '⚠️The 0.13 release refactored our HTML, so double-check your custom CSS rules!⚠️'
   favicon: images/favicon.ico
-  google_analytics_id: G-RSN9SBR0JK
+  google_analytics_id: UA-52617120-7
   home_page_in_navbar: false
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
-  baseurl: https://daisy.ihep.ac.cn/
+  baseurl: https://jupyterbook.org/
   analytics:
-    google_analytics_id = 'iG-RSN9SBR0JK'
+    google_analytics_id = ''
 
 repository:
-  url: https://github.com/huyuhuster/daisydoc 
-  branch: readdocjb
+  url: https://github.com/executablebooks/jupyter-book
+  branch: master
   path_to_book: docs
 
 launch_buttons:
@@ -120,13 +120,13 @@ sphinx:
         - fmt: Rmd
     rediraffe_branch: 'master'
     rediraffe_redirects:
-      # content-types/index.md: file-types/index.md
-      # content-types/markdown.md: file-types/markdown.md
-      # content-types/notebooks.ipynb: file-types/notebooks.ipynb
-      # content-types/myst-notebooks.md: file-types/myst-notebooks.md
-      # content-types/jupytext.md: file-types/jupytext.Rmd
-      # content-types/restructuredtext.md: file-types/restructuredtext.md
-      # customize/toc.md: structure/toc.md
+      content-types/index.md: file-types/index.md
+      content-types/markdown.md: file-types/markdown.md
+      content-types/notebooks.ipynb: file-types/notebooks.ipynb
+      content-types/myst-notebooks.md: file-types/myst-notebooks.md
+      content-types/jupytext.md: file-types/jupytext.Rmd
+      content-types/restructuredtext.md: file-types/restructuredtext.md
+      customize/toc.md: structure/toc.md
     sd_fontawesome_latex: True
 
     html_theme_options:
